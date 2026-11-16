@@ -1,0 +1,10 @@
+# segredos: a chave da NASA nunca entra no repositorio
+secrets/
+*.key
+.env
+.env.*
+
+# temporarios de coleta
+_flr_repro.json
+_sep_jan.json
+__pycache__/

@@ -1,0 +1,361 @@
+{
+ "took": 4,
+ "timed_out": false,
+ "_shards": {
+  "total": 5,
+  "successful": 5,
+  "skipped": 0,
+  "failed": 0
+ },
+ "hits": {
+  "total": 107,
+  "max_score": 17.805784,
+  "hits": [
+   {
+    "_index": "study",
+    "_type": "docs",
+    "_id": "aN_6g4QB28eYt3lGNrap",
+    "_score": 17.805784,
+    "_source": {
+     "Space Program": "NASA",
+     "Flight Program": "Soyuz",
+     "Study Assay Measurement Type": "transcription profiling",
+     "Study Protocol Description": "RNA was isolated using the MirVana RNA isolation kit (Life Technologies) and amplified by in vitro transcription with T7 RNA polymerase.      Analysis of microarray data was conducted using both Microarray Suite (MAS) version 5.0 and Robust Multi-Array Average (RMA) 22. Differentially expressed genes were > -2 (decrease) or a fold change of > 2 (increase) with a FDR of 0.05.      Samples (100ng) were labeled using the Affymetrix GeneChip WT Plus protocol.      Samples were hybridized to an Affymetrix Mouse Gene 1.0 ST Gene Chip.      C57BL/6N male mice were flown for 30 days (477 Earth orbits) on the unmanned BION-M1 biosatellite between 19 April and 19 May 2013. Tissues were acquired from six male flight mice as part of NASA x92s Biospecimen Sharing Program. The mice were specific pathogen-free and 19 x9620 weeks old at the time of launch and start of control experiments. In addition to the six flight mice (SF) there were eight  x93flight x94 vivarium male ground control mice (SFV) seven asynchronous ground control males (GC) and seven asynchronous vivarium ground control males (GCV). Tissues were harvested 12 x9613 h post-landing. Hindlimbs and elbow joints were dissected and right limbs placed in RNALater (Ambion) with left limbs placed in 10% neutral-buffered formalin (NBF). Sternae with ribs attached were cut mid-sternum and the posterior half containing xiphoid process and two sternocostal joints placed in RNALater and the anterior half placed in NBF for histology. RNALater-preserved articular cartilage (AC) from the femoral condyle and proximal tibia was dissected down to the calcified zone using an ophthalmic scalpel and tissue from spaceflight (SF) and ground control (GC) animals pooled separately. Half sternum pieces were dissected from sternal cartilage (SC) dissected from bony segments and pooled.     On-board dosimetry details including schematics are available at: https://genelab-data.ndc.nasa.gov/genelab/environmental/radiation/BION-M1/. Summary dosimetry is given per sample. Ground Control samples were assumed to have had background radiation exposure but exposure is not actually measured.",
+     "Material Type": "",
+     "Study Identifier": "BION cartilage -Fitzgerald",
+     "Study Person": {
+      "First Name": "Jamie",
+      "Middle Initials": "",
+      "Last Name": "Fitzgerald"
+     },
+     "ESA Acronym": "",
+     "Acknowledgments": "",
+     "Managing NASA Center": "",
+     "Data Source Type": "cgene",
+     "Mission": {
+      "Start Date": "19-Apr-2013",
+      "End Date": "19-May-2013",
+      "Name": "BION-M1"
+     },
+     "Study Grant Number": "#NNX09AQ03G",
+     "Experiment Platform": "BION-M1",
+     "Study Factor Name": "Spaceflight     Tissue",
+     "Study Publication Author List": "Jamie Fitzgerald Jamie Endicott Uwe Hansen and Cathleen Janowitz",
+     "Study Assay Technology Platform": "Affymetrix",
+     "Authoritative Source URL": "GLDS-232/",
+     "Project Identifier": "NA",
+     "thumbnail": "/genelab/img/GLDS232__study_image.png",
+     "Project Title": "Gene expression in cartilages following 30 days of spaceflight",
+     "Study Public Release Date": "1556856000",
+     "Project Link": "",
+     "Study Publication Title": "Articular cartilage and sternal fibrocartilage respond differently to extended microgravity",
+     "organism": "Mus musculus",
+     "Accession": "OSD-232",
+     "Study Assay Technology Type": "microarray",
+     "Study Title": "The response of murine cartilages to 30 days of microgravity",
+     "Study Protocol Type": "RNA extraction     data collection     labeling     nucleic acid hybridization     treatment protocol     Radiation Dosimetry",
+     "Project Type": "Spaceflight Study",
+     "Study Funding Agency": "NASA - Biospecimen sharing program",
+     "Study Factor Type": "Tissue, Space Flight",
+     "Factor Value": "",
+     "Study Description": "Articular and sterno-costal cartilages were isolated from skeletally-mature mice flown for 30 days on the BION-M1 mission. Samples were characterized histologically for proteoglycan loss and at the gene expression levels using Affymetrix gene arrays.",
+     "Study Protocol Name": "RNA extraction     data collection     labeling     nucleic acid hybridization     treatment protocol     radiation dosimetry protocol",
+     "Characteristics": "",
+     "Parameter Value": "",
+     "Identifiers": "GLDS-232",
+     "Data Source Accession": ""
+    },
+    "highlight": {
+     "all": [
+      "/environmental/<em>radiation</em>/BION-M1/.",
+      "Summary <em>dosimetry</em> is given per sample.",
+      "<em>cgene</em>",
+      "<em>Dosimetry</em>",
+      "<em>dosimetry</em> protocol"
+     ]
+    }
+   },
+   {
+    "_index": "study",
+    "_type": "docs",
+    "_id": "waH4TIYBz4EQh6o3gbun",
+    "_score": 16.047733,
+    "_source": {
+     "Authoritative Source URL": "OSD-489/",
+     "Flight Program": "International Space Station (ISS)",
+     "Mission": {
+      "End Date": "10/25/2014",
+      "Start Date": "09/21/2014",
+      "Name": "SpaceX-4"
+     },
+     "Material Type": "lumbar vertebra 4",
+     "Project Identifier": "RR-1",
+     "Accession": "OSD-489",
+     "Identifiers": "GLDS-489     LSDS-15",
+     "Study Identifier": "OSD-489",
+     "Study Protocol Name": "sample collection     Image Scan Acquisition     Animal Husbandry     ALSDA Processed Data     Image Processing And Reconstruction     radiation dosimetry",
+     "Study Assay Technology Type": "Micro-Computed Tomography",
+     "Acknowledgments": "",
+     "Study Assay Technology Platform": "Bruker SkyScan",
+     "Study Person": {
+      "Last Name": "Dubeé Scott Thomas Pendleton Alwood",
+      "Middle Initials": "B. T. J. M. S.",
+      "First Name": "Parker Ryan Nicholas Megan Joshua"
+     },
+     "Study Protocol Type": "sample collection     Image Scan Acquisition     Animal Husbandry     data transformation     Image Processing And Reconstruction     chronic",
+     "Space Program": "NASA",
+     "Study Title": "Quantifying Cancellous Bone Structural Changes in Microgravity: Axial Skeleton Results from the RR-1 Mission",
+     "Study Factor Type": "Space Flight",
+     "Study Public Release Date": 1676246400.0,
+     "Parameter Value": "",
+     "thumbnail": "/geode-py/ws/studies/OSD-489/image",
+     "Study Factor Name": "Spaceflight",
+     "Study Assay Measurement Type": "Bone Microstructure",
+     "Project Type": "Spaceflight Study",
+     "Factor Value": "",
+     "Data Source Accession": "ARC00XX146",
+     "Project Title": "Rodent Research 1",
+     "Study Funding Agency": "This study was supported by the Space Life Sciences Training Program at NASA Ames Research Center and a Space Biology PECASE. We thank our colleagues in the Bone and Signaling Lab. Samples were solicited and procured through the NASA Ames Life Sciences Data Archive (now the NASA Biological Institutional Scientific Collection).",
+     "Study Protocol Description": "The RR-1 mice were euthanized by ISS crew with Euthasol injection followed by cervical dislocation, frozen in a pre-chilled Mini Cold Bag (MCB) before transfer to the MELFI freezer (-80 C) and brought back to Earth. Exact matched procedures were held for ground control, vivarium, and basal groups. After vehicle return, dissection of all four groups (flight, baseline, ground, vivarium) were conducted. The returned carcasses were thawed and dissected twice. The first round of carcass dissections, known as the RR1 1st thaw BSP (Biospecimen Sharing Program), spanned a 2-week period in April 2015 and a 1-week period in May 2015. The RR1 2nd thaw BSP was performed in March 2016. BSP samples were dissected, frozen, and then transferred to the Ames Life Sciences Data Archive (ALSDA; now NBISC [NASA Biological Institutional Scientific Collection) for long-term storage. Tissues from forty mice were received for this study, from RR-1 through BSP/ALSDA and lumbar vertebrae (L4) were assessed for cancellous bone by microcomputed tomography. Vertebrae were preserved by wrapping specimens with single 2-ply gauze squares (1/3 of a typical tri-fold gauze pad) and dipped into PBS with Ca2+ and Mg2+. Tissues were stored in labeled specimen containers and placed on ice, and subsequently stored at -20C.     The mCT machine used for this study was a SkyScan 1174, Bruker, Belgium. The scanning was conducted at 6.7 micrometers per pixel, x-ray intensity was 800 miliamperes, and killivolt peak was 50kvp, with frame averaging of 2. A .log file from the scanning, reconstruction, and analysis from this mCT study was submitted and available for data provenance.     This study was approved by by the NASA Ames Research Center Institutional Animal Care and Use Committee (IACUC). Post-pubescent female C57BL/6J mice (16 weeks at launch) were exposed to 37 days of microG flight, after being flown to the ISS, and housed in the Rodent Habitat. Mice of similar age, sex and strain were used for ground controls housed in identical hardware and matching ISS environmental conditions. The mice were acclimated to NASA Rodent Food bars, lixits, and wire floors.     To enable maximal data reuse (for machine-readable approaches), the submitted version of this dataset was subsequently transformed and edited to be aligned with a microCT data reuse template, which was created through feedback provided by subject matter experts in the ALSDA Analysis Working Group. This transformed reusable version is structured so all results are standardized into specific rows (source/subject) and columns (measures). This enables all microCT results to be identically structured for efficient data mining.     An upper/lower threshold approach was used to binarize grayscale images, with a lower gray threshold of 40 and upper gray threshold of 255 (on 0-1000 scale).     The absorbed dose of ionizing radiation received by biological payloads on the International Space Station (ISS) depends on a number of factors, including date and duration of exposure and location of the payload on the ISS. Some of the factors that lead to variations in the absorbed dose rate in orbit are ISS altitude, period during the solar cycle, and location of the sample—the ISS module and the specific location within that module. Shielding effects from the biological payload container or habitat have not been taken into account. The measured absorbed dose can vary based on the dosimetry instrument(s) used. Radiation monitoring on the ISS is not standardized across modules; each international partner has its own suite of instruments, with differing technologies, sensitivities and analysis methodologies, including criteria for distinguishing between lightly ionizing particles (mainly protons) and highly ionizing particles (mainly galactic cosmic ray nuclei). Both active and passive dosimeters are used. Active dosimeters are powered and data are read out and stored and/or telemetered to ground. Some active dosimeters provide additional levels of detail such as time resolution, energy deposition and particle identification. Passive dosimeters are unpowered, record constantly and are read out upon return to the ground. The dose in the metadata is the dose recorded by the radiation detector closest to the sample. In most cases that detector will be in the same ISS module; in cases where data from a detector in the same module are not available, the dose is extrapolated using data from periods where data are available from detectors in multiple modules, including the module containing the payload. The duration of the experiment is defined as the time in space during which the specimen was “living”, including the time on the delivery vehicle (e.g. SpaceX Dragon). Once the specimen was frozen or fixed, the experiment was considered stopped. Details of ISS dosimetry and a table with doses for all GeneLab ISS experiment ISS datasets are available at https://genelab.nasa.gov/environmental/radiation.",
+     "Experiment Platform": "Rodent Habitat",
+     "Characteristics": "",
+     "Study Grant Number": "Space Life Sciences Training Program at NASA Ames Research Center and a Space Biology PECASE",
+     "Study Publication Author List": "",
+     "Project Link": "https://nlsp.nasa.gov/view/lsdapub/lsda_experiment/7633383e-fe88-5ada-92dd-cd31a50fda32",
+     "Study Publication Title": "",
+     "Managing NASA Center": "Ames Research Center (ARC)",
+     "Study Description": "Objective of this study was to further validate bone degradation in microgravity as site-specific and preferential to weight bearing bone. An objective of this study was to further understand the role of the mechanical environment in controlling the process of bone remodeling, namely local formation and resorption to maintain a healthy structure. These data from the lumbar 4 bones of Rodent Research-1 mission aboard the International Space Station, are unpublished, and were presented at the 2016 meeting of the American Society for Gravitational Space Research. This dataset derives results from the micro–computed tomography (mCT) assay.",
+     "organism": "Mus musculus",
+     "Data Source Type": "alsda",
+     "ESA Acronym": ""
+    },
+    "highlight": {
+     "all": [
+      "Processing And Reconstruction     <em>radiation</em> <em>dosimetry</em>",
+      "The measured absorbed dose can vary based on the <em>dosimetry</em> instrument(s) used.",
+      "Details of ISS <em>dosimetry</em> and a table with doses for all GeneLab ISS experiment ISS datasets are available",
+      "at https://genelab.nasa.gov/environmental/<em>radiation</em>.",
+      "<em>alsda</em>"
+     ]
+    }
+   },
+   {
+    "_index": "study",
+    "_type": "docs",
+    "_id": "WN_6g4QB28eYt3lGNbZX",
+    "_score": 14.174902,
+    "_source": {
+     "Space Program": "NASA",
+     "Flight Program": "",
+     "Study Assay Measurement Type": "transcription profiling",
+     "Study Protocol Description": "RNA was extracted using a modified guanidine thiocyanate method (Chomczynski and Sacchi, 1987, PMID: 2440339) followed by purification with RNeasy columns (Qiagen, Valencia, CA).  RNA samples were quantified using a Nanodrop spectrophotometer and monitored for quality using an Agilent Bioanalyzer prior to labeling for microarray analysis.     Fluorescently labeled cDNA was prepared from mock-irradiated control and activated medium control whole-cell RNA by a single round of reverse transcription (BRL Superscript II) in the presence of aminoallyl dUTP (Sigma-Aldrich), followed by coupling to monofunctional NHS-ester Cy3 or Cy5 dye (Amersham) (Amundson and Fornace, 2004. PMID:14970650)     Hybridization was carried out with active mixing using the MAUI Hybridization System (BioMicro Systems, Salt Lake City, UT) for 16 hours in Deposition Hybridization Buffer (Agilent) at 65oC in the presence of the blockers human CoT1, yeast tRNA and poly dA.  Hybridized slides were washed at room temperature once in 0.5X SSC, 0.01% SDS for 5 minutes and again in 0.06X SSC for 5 minutes.     Slides were scanned on an Agilent Microarray Scanner, 100% PMT voltage, 10 uM resolution scans. Images were processed using ArraySuite 2.1 extensions in the IPLab program (Scanalytics Inc., Fairfax, VA) as described in Chen et al., 2002 (PMID: 12217912).     TK6 cells were maintained in exponential growth at densities of 1-10 x 10^5 cells/ml in RPMI 1640 medium supplemented with 10% heat-inactivated (56C for 45 minutes) fetal calf serum and 100 U/ml penicillin and 100 U/ml streptomycin in a humidified, 5% CO2 atmosphere in a 37C incubator.     HZE particle irradiation was performed at the NASA Space Radiation Laboratory (NSRL) at Brookhaven National Laboratory.  Exponentially growing cells were concentrated by centrifugation and exposed to graded doses of 1 GeV/amu 56Fe ions (148 keV/um) in a volume of 10 ml per culture point to limit the amount of medium activated during the irradiation.  Dosimetry was performed by the NSRL Physics Group.  Tubes containing the cells were placed perpendicular to the beam in the center of the field, where the variation in fluence was less than 5%. Control cultures were prepared in the same way and mock irradiated.  An activated-medium control was prepared by irradiating 10 ml of medium without cells to the highest dose used (2.5 Gy).  Immediately after irradiation, medium was added to bring the cells to normal culture densities (4-5 x 10^5cells/ml).  The cells for the activated control were resuspended in the activated medium prior to addition of the remaining medium.",
+     "Material Type": "Cells",
+     "Study Identifier": "OSD-9",
+     "Study Person": {
+      "First Name": "Sally",
+      "Middle Initials": "A",
+      "Last Name": "Amundson"
+     },
+     "ESA Acronym": "",
+     "Acknowledgments": "We thank the staff of the NASA Space Radiation Laboratory for dosimetry and assistance with 56Fe-ion irradiations and Jaeyong Ahn for technical assistance.",
+     "Managing NASA Center": "Johnson Space Center (JSC)",
+     "Data Source Type": "cgene",
+     "Mission": {
+      "Start Date": "",
+      "End Date": "",
+      "Name": ""
+     },
+     "Study Grant Number": "NNJ04HF41G and NNX09AE95G.",
+     "Experiment Platform": "",
+     "Study Factor Name": "Ionizing Radiation",
+     "Study Publication Author List": "Meador JA  Ghandhi SA  Amundson SA.",
+     "Study Assay Technology Platform": "Compugen",
+     "Authoritative Source URL": "OSD-9/",
+     "Project Identifier": "High_Dose_Irradiation, High_LET_Irradiation, Heavy_Ion_HZE_Irradiation",
+     "thumbnail": "/geode-py/ws/studies/OSD-9/image",
+     "Project Title": "Functional Genomic and Signaling Responses to HZE Particle Radiation",
+     "Study Public Release Date": 1301616000.0,
+     "Project Link": "http://lsda.jsc.nasa.gov/scripts/experiment/exper.aspx?exp_index=10327",
+     "Study Publication Title": "p53-independent downregulation of histone gene expression in human cell lines by high- and low-let radiation",
+     "organism": "Homo sapiens",
+     "Accession": "OSD-9",
+     "Study Assay Technology Type": "DNA microarray",
+     "Study Title": "Response of human lymphoblastoid cells to activated medium",
+     "Study Protocol Type": "nucleic acid extraction protocol     labeling     hybridization     scan protocol     growth protocol     acute",
+     "Project Type": "Ground Study",
+     "Study Funding Agency": "This work was supported by NASA grants NNJ04HF41G and NNX09AE95G.",
+     "Study Factor Type": "ionizing radiation",
+     "Factor Value": "",
+     "Study Description": "Transcriptional profiling of human lymphoblastoid TK6 cells comparing mock irradiaed cells resuspended in fresh untreated RPMI 1640 medium with cells resuspended in medium activated by exposure to 2.5 Gy HZE (1 GeV/amu iron ions accelerated at the NASA Space Research Laboratory (NSRL) of Brookhaven National Laboratory). Two-condition experiment, mock irradiated vs. cells exposed to activated medium. 3 biological replicates were independently grown and harvested during three different runs at the NSRL. One replicate per array.",
+     "Study Protocol Name": "Nucleic Acid Extraction     Labeling     Nucleic Acid Hybridization     Scan Protocol     Growth Protocol     Irradiation Protocol",
+     "Characteristics": "",
+     "Parameter Value": "",
+     "Identifiers": "GLDS-9",
+     "Data Source Accession": "E-GEOD-16519"
+    },
+    "highlight": {
+     "all": [
+      "<em>Dosimetry</em> was performed by the NSRL Physics Group.",
+      "We thank the staff of the NASA Space <em>Radiation</em> Laboratory for <em>dosimetry</em> and assistance with 56Fe-ion",
+      "<em>cgene</em>",
+      "Ionizing <em>Radiation</em>",
+      "ionizing <em>radiation</em>"
+     ]
+    }
+   },
+   {
+    "_index": "study",
+    "_type": "docs",
+    "_id": "GSE104121",
+    "_score": 13.244413,
+    "_source": {
+     "Space Program": "",
+     "Flight Program": "",
+     "Study Assay Measurement Type": "",
+     "Study Protocol Description": "",
+     "Material Type": "",
+     "Study Identifier": "",
+     "Study Person": {
+      "First Name": "Michael",
+      "Middle Initials": "",
+      "Last Name": "Falduto"
+     },
+     "ESA Acronym": "",
+     "Acknowledgments": "",
+     "Managing NASA Center": "",
+     "links": [
+      "GPL10787",
+      "GPL21163"
+     ],
+     "Data Source Type": "nih_geo_gse",
+     "Mission": {
+      "Start Date": "0000000000",
+      "End Date": "0000000000",
+      "Name": ""
+     },
+     "Study Grant Number": "",
+     "Experiment Platform": "",
+     "Study Factor Name": "",
+     "Study Publication Author List": "Molykutty,J,Aryankalayil Joel,,Levin Claire,,Vanpouille-Box C,N,Coleman Uma,,Shankavaram Shaoli,,Das Sandra,,Demaria Sunita,,Chopra Adeola,,Makinde Iris,,Eke",
+     "Study Assay Technology Platform": "GPL10787 GPL21163",
+     "Authoritative Source URL": "GSE104121",
+     "Project Identifier": "",
+     "thumbnail": "",
+     "Project Title": "",
+     "Study Public Release Date": 1527764400,
+     "Project Link": "",
+     "Study Publication Title": "",
+     "organism": [
+      "Mus musculus"
+     ],
+     "Accession": "GSE104121",
+     "Study Assay Technology Type": "",
+     "Study Title": "Radiation-induced molecular alterations after whole body irradiation in a mouse model",
+     "Study Protocol Type": "",
+     "Project Type": "Expression profiling by array",
+     "Study Funding Agency": "",
+     "Study Factor Type": [
+      ""
+     ],
+     "Factor Value": [
+      ""
+     ],
+     "Study Description": "Long non-coding RNAs (lncRNAs) are emerging as key molecules in regulating many biological processes and have been implicated in development and disease pathogenesis. Biomarkers of cancer and normal tissue response to treatment are of great interest in precision medicine and for public health and medical management of disasters such as assessing radiation injury following accidental or intentional exposure. Circulating and functional RNAs, including microRNAs (miRNAs) and lncRNAs, in whole blood and other body fluids represent potential valuable candidates as biomarkers. Early prediction of possible acute, intermediate, and delayed effects of radiation exposure will enable timely therapeutic interventions. To address whether lncRNAs could serve as biomarkers for radiation bio-dosimetry, we performed whole genome transcriptome analysis in a mouse model after whole body irradiation. Differential lncRNA expression patterns were evaluated at 16-, 24-, and 48-hour time points post irradiation in total RNA isolated from whole blood of mice exposed to 1, 2, 4, 8, and 12 Gy of gamma-rays. Sham irradiated animals served as controls. Significant alterations in the expression patterns of lncRNAs were observed after different radiation doses at the various timepoints. We identified several lncRNAs known for DNA damage response as well as immune response as radiation induced biomarkers. Long non-coding RNA targets of tumor protein 53 (P53), Trp53cor1, Dino, Pvt1 and Tug1 and an upstream regulator of p53, Meg3 were altered in response to radiation. Gm14005 (Morrbid) and Tmevpg1 were regulated by radiation across all time points and doses. These two lncRNAs have important potential as blood based radiation biomarkers; Gm14005 (Morrbid) has recently been shown to play a key role in inflammatory response while Tmevpg1 has been implicated in the regulation of interferon-gamma. Precise molecular biomarkers will not only enable the development and effective use of medical countermeasures but also may be used to detect and circumvent or mitigate normal tissue injury in cancer radiotherapy treatments.",
+     "Study Protocol Name": "",
+     "Characteristics": [
+      ""
+     ],
+     "Parameter Value": [
+      ""
+     ],
+     "Data Source Accession": "GSE104121"
+    },
+    "highlight": {
+     "all": [
+      "<em>nih_geo_gse</em>",
+      "<em>Radiation</em>-induced molecular alterations after whole body irradiation in a mouse model",
+      "To address whether lncRNAs could serve as biomarkers for <em>radiation</em> bio-<em>dosimetry</em>, we performed whole",
+      "Significant alterations in the expression patterns of lncRNAs were observed after different <em>radiation</em>",
+      "Gm14005 (Morrbid) and Tmevpg1 were regulated by <em>radiation</em> across all time points and doses."
+     ]
+    }
+   },
+   {
+    "_index": "study",
+    "_type": "docs",
+    "_id": "GSE107057",
+    "_score": 12.581105,
+    "_source": {
+     "Space Program": "",
+     "Flight Program": "",
+     "Study Assay Measurement Type": "",
+     "Study Protocol Description": "",
+     "Material Type": "",
+     "Study Identifier": "",
+     "Study Person": {
+      "First Name": "Michael",
+      "Middle Initials": "",
+      "Last Name": "Falduto"
+     },
+     "ESA Acronym": "",
+     "Acknowledgments": "",
+     "Managing NASA Center": "",
+     "links": [
+      "GPL19970"
+     ],
+     "Data Source Type": "nih_geo_gse",
+     "Mission": {
+      "Start Date": "0000000000",
+      "End Date": "0000000000",
+      "Name": ""
+     },
+     "Study Grant Number": "",
+     "Experiment Platform": "",
+     "Study Factor Name": "",
+     "Study Publication Author List": "Molykutty,J,Aryankalayil Joel,,Levin Claire,,Vanpouille-Box C,N,Coleman Uma,,Shankavaram Iris,,Eke Sandra,,Demaria Sunita,,Chopra Adeola,,Makinde",
+     "Study Assay Technology Platform": "GPL19970",
+     "Authoritative Source URL": "GSE107057",
+     "Project Identifier": "",
+     "thumbnail": "",
+     "Project Title": "",
+     "Study Public Release Date": 1530442800,
+     "Project Link": "",
+     "Study Publication Title": "",
+     "organism": [
+      "Mus musculus"
+     ],
+     "Accession": "GSE107057",
+     "Study Assay Technology Type": "",
+     "Study Title": "Differential expression patterns of microRNAs in a mouse model after whole body radiation",
+     "Study Protocol Type": "",
+     "Project Type": "Non-coding RNA profiling by array",
+     "Study Funding Agency": "",
+     "Study Factor Type": [
+      ""
+     ],
+     "Factor Value": [
+      ""
+     ],
+     "Study Description": "Rapid and reliable methods for conducting biological dosimetry are a necessity in the event of a large-scale nuclear event. Timely and accurate methods are thus critical in order to correctly evaluate and identify radiation dose exposure and triage appropriately. Alterations in microRNAs (miRNAs), small non-coding RNAs of 19-22 nucleotides, have been reported in cells/tumors subjected to radiation exposure, implying that miRNAs play an important role in cellular stress response to radiation. To examine the possibility of using microRNA as stable blood based biomarkers for radiation response, we have used microRNA microarray analysis. Differential microRNA expression pattern was evaluated (>1.5 fold and  p value <0.05) at 6, 24, 48 h and 7day time points in whole blood from mice exposed to 2, 4, 8, 12 and 15Gy  irradiation. More differentially expressed microRNAs (up and down) were seen after higher dose of radiation and later time points. Among the significantly upregulated microRNAs, miR-193b-3p and mir-92a-3p were consistently upregulated for all doses at earlier time points. We observed significant downregulation of several members of the miR-17 family (miR-17-5p, miR-20a-5p, miR-93-5p and miR-106b-5p) in response to radiation from 2 Gy onwards at 24 h, 48 h and at higher doses for the 7 d time-point. Whereas miR-34a, which regulates G1/S cell cycle checkpoint activation in response to radiation induced DNA damage, showed consistent upregulation for both low and high doses at later time points up to one week after exposure. Significant down regulation of miR-150-5p, miR-101, miR-140, miR-29b, miR-193b and miR-30 family of microRNAs were seen for low and high doses of radiation for all time points up to 7day. Low dose radiation (2Gy) exposure also resulted in down regulation of a group of microRNAs after one week; whereas these microRNAs showed upregulation after high dose exposure (8, 12 and 15Gy) up to one week. This dose and time dependent differential microRNA expression pattern might be useful in evaluating radiation response during and after therapeutic radiation treatment in patients. Ultimately, a combined approach of identifying biomarkers by assessing functional miRNA, target mRNAs and the resulting proteins to assess radiation exposure after mass-casualty incidents could provide a valuable tool in developing and implementing effective and timely medical countermeasures.",
+     "Study Protocol Name": "",
+     "Characteristics": [
+      ""
+     ],
+     "Parameter Value": [
+      ""
+     ],
+     "Data Source Accession": "GSE107057"
+    },
+    "highlight": {
+     "all": [
+      "<em>nih_geo_gse</em>",
+      "Differential expression patterns of microRNAs in a mouse model after whole body <em>radiation</em>",
+      "Rapid and reliable methods for conducting biological <em>dosimetry</em> are a necessity in the event of a large-scale",
+      "exposure, implying that miRNAs play an important role in cellular stress response to <em>radiation</em>.",
+      "response during and after therapeutic <em>radiation</em> treatment in patients."
+     ]
+    }
+   }
+  ]
+ }
+}
