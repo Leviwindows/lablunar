@@ -8,7 +8,8 @@ failures force decisions every day. Every choice has a cost — there is no perf
 
 - **One file, no server.** Everything is in `index.html`: HTML, CSS and JavaScript.
 - **No login, no install, no backend.** Double-click and play.
-- **Language:** Brazilian Portuguese (pt-BR), written for ages 7–12, with terms explained where they appear.
+- **Language:** English, written for ages 7–12, with terms explained where they appear.
+  (The first build was in Brazilian Portuguese for a local audience; the interface is now English-only.)
 - **Only external resource:** Google Fonts (the page still works without it).
 
 ---

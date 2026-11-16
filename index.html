@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="dark" />
-<title>LabLunar — posto lunar</title>
+<title>LabLunar — lunar outpost</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
@@ -159,121 +159,121 @@
 <div class="wrap">
   <header class="top">
     <div class="brand">Lab<span>Lunar</span></div>
-    <div class="badge" id="dataBadge">dados NASA · snapshot</div>
+    <div class="badge" id="dataBadge">NASA data · snapshot</div>
   </header>
 
   <main>
     <!-- ================= INTRO ================= -->
     <section id="scr-intro" class="screen">
-      <h1>Você comanda um posto na Lua</h1>
-      <p class="lead">Crianças de 7 a 12 anos cuidam de uma base lunar por 56 dias: 28 de sol e 28 de noite, com tempestades solares no meio.</p>
+      <h1>You run a lunar outpost</h1>
+      <p class="lead">Ages 7 to 12 keep a lunar base alive for 56 days: 28 of sunlight, 28 of darkness, with solar storms in between.</p>
 
       <div class="card">
-        <h2>Três números para vigiar</h2>
+        <h2>Three numbers to watch</h2>
         <p style="margin-bottom:10px">
-          <b style="color:var(--amber)">Energia</b> — a bateria guarda o que os painéis produzem de dia.<br>
-          <b style="color:var(--sky)">Oxigênio</b> — a estufa e a recicladora devolvem o ar que a tripulação respira.<br>
-          <b style="color:var(--mint)">Radiação</b> — a “dose” é quanto de radiação a tripulação já absorveu.
+          <b style="color:var(--amber)">Energy</b> — the battery stores what the panels make during the day.<br>
+          <b style="color:var(--sky)">Oxygen</b> — the greenhouse and the recycler give back the air the crew breathes.<br>
+          <b style="color:var(--mint)">Radiation</b> — the “dose” is how much radiation the crew has absorbed.
         </p>
-        <p style="margin:0">Não existe base perfeita: toda escolha tem um preço.</p>
+        <p style="margin:0">There is no perfect base: every choice has a cost.</p>
       </div>
 
-      <button class="btn" id="btnStart">Começar a montar a base</button>
-      <p class="muted" style="margin-top:12px;text-align:center">Funciona no celular e no computador. Sem instalar nada.</p>
+      <button class="btn" id="btnStart">Start building the base</button>
+      <p class="muted" style="margin-top:12px;text-align:center">Works on phone and computer. Nothing to install.</p>
     </section>
 
     <!-- ================= MONTAGEM ================= -->
     <section id="scr-design" class="screen hidden">
-      <h1 style="font-size:24px">Monte sua base</h1>
-      <p>Massa é o quanto a sua base pesa no foguete. Você tem <b>100</b>.</p>
+      <h1 style="font-size:24px">Build your base</h1>
+      <p>Mass is how heavy your base is for the rocket. You have <b>100</b>.</p>
 
       <div class="card">
         <div class="budget">
-          <span class="muted" id="massLabel">Massa usada: 0 / 100</span>
+          <span class="muted" id="massLabel">Mass used: 0 / 100</span>
         </div>
         <div class="bar" id="massBar"><i style="width:0%"></i></div>
 
         <div class="sep"></div>
 
         <div class="item">
-          <div class="name"><b>Painéis solares</b><small>Fazem energia só durante o dia lunar.</small></div>
-          <div class="stepper" data-item="panels"><button data-d="-1" aria-label="menos">−</button><span class="val">0</span><button data-d="1" aria-label="mais">+</button></div>
+          <div class="name"><b>Solar panels</b><small>They make power only during the lunar day.</small></div>
+          <div class="stepper" data-item="panels"><button data-d="-1" aria-label="less">−</button><span class="val">0</span><button data-d="1" aria-label="more">+</button></div>
         </div>
         <div class="item">
-          <div class="name"><b>Baterias</b><small>Guardam energia para as 14 noites seguidas.</small></div>
-          <div class="stepper" data-item="batteries"><button data-d="-1" aria-label="menos">−</button><span class="val">0</span><button data-d="1" aria-label="mais">+</button></div>
+          <div class="name"><b>Batteries</b><small>They store power for the 14 nights in a row.</small></div>
+          <div class="stepper" data-item="batteries"><button data-d="-1" aria-label="less">−</button><span class="val">0</span><button data-d="1" aria-label="more">+</button></div>
         </div>
         <div class="item">
-          <div class="name"><b>Estufas</b><small>Produzem oxigênio (e comida). Gastam energia de dia e de noite.</small></div>
-          <div class="stepper" data-item="greenhouses"><button data-d="-1" aria-label="menos">−</button><span class="val">0</span><button data-d="1" aria-label="mais">+</button></div>
+          <div class="name"><b>Greenhouses</b><small>They make oxygen (and food). They use power day and night.</small></div>
+          <div class="stepper" data-item="greenhouses"><button data-d="-1" aria-label="less">−</button><span class="val">0</span><button data-d="1" aria-label="more">+</button></div>
         </div>
         <div class="item">
-          <div class="name"><b>Recicladora de ar</b><small>Devolve parte do oxigênio respirado.</small></div>
-          <div class="stepper" data-item="recycler"><button data-d="-1" aria-label="menos">−</button><span class="val">0</span><button data-d="1" aria-label="mais">+</button></div>
+          <div class="name"><b>Air recycler</b><small>It recovers part of the oxygen the crew breathes out.</small></div>
+          <div class="stepper" data-item="recycler"><button data-d="-1" aria-label="less">−</button><span class="val">0</span><button data-d="1" aria-label="more">+</button></div>
         </div>
       </div>
 
       <div class="card">
-        <h2>Escudo contra radiação</h2>
-        <p style="margin-bottom:10px">Sem escudo não dá para abrigar a tripulação na tempestade.</p>
+        <h2>Radiation shield</h2>
+        <p style="margin-bottom:10px">Without a shield you cannot shelter the crew during a storm.</p>
         <div class="shields" id="shields"></div>
       </div>
 
       <div class="card">
-        <h2>Previsão da sua base</h2>
+        <h2>Your base forecast</h2>
         <div class="preview" id="preview"></div>
         <p class="muted" id="previewWarn" style="margin:10px 0 0"></p>
       </div>
 
-      <button class="btn" id="btnMission">Iniciar missão</button>
-      <button class="btn ghost small" id="btnReset" style="margin-top:8px">Voltar ao padrão</button>
+      <button class="btn" id="btnMission">Start mission</button>
+      <button class="btn ghost small" id="btnReset" style="margin-top:8px">Back to default</button>
     </section>
 
     <!-- ================= MISSÃO ================= -->
     <section id="scr-mission" class="screen hidden">
       <div class="mission-top">
-        <div class="daypill" id="dayPill">Dia 1 de 56</div>
-        <div class="muted" id="spares">peças: 3</div>
+        <div class="daypill" id="dayPill">Day 1 of 56</div>
+        <div class="muted" id="spares">spares: 3</div>
       </div>
 
       <div class="sky day" id="sky">
         <div class="orb"></div>
-        <div class="phase" id="phaseText">Sol (dia 1 de 14)</div>
+        <div class="phase" id="phaseText">Sun (day 1 of 14)</div>
       </div>
 
       <div class="meters">
         <div class="meter energy" id="mEnergy">
-          <div class="top"><span class="k">ENERGIA</span><span class="v" id="vEnergy">0 kWh</span></div>
+          <div class="top"><span class="k">ENERGY</span><span class="v" id="vEnergy">0 kWh</span></div>
           <div class="track"><div class="fill" id="fEnergy" style="width:0%"></div></div>
           <div class="note" id="nEnergy"></div>
         </div>
         <div class="meter oxygen" id="mOxygen">
-          <div class="top"><span class="k">OXIGÊNIO</span><span class="v" id="vOxygen">100%</span></div>
+          <div class="top"><span class="k">OXYGEN</span><span class="v" id="vOxygen">100%</span></div>
           <div class="track"><div class="fill" id="fOxygen" style="width:100%"></div></div>
-          <div class="note">Se chegar a 0%, a missão acaba.</div>
+          <div class="note">If it reaches 0%, the mission ends.</div>
         </div>
         <div class="meter dose" id="mDose">
-          <div class="top"><span class="k">RADIAÇÃO</span><span class="v" id="vDose">0%</span></div>
+          <div class="top"><span class="k">RADIATION</span><span class="v" id="vDose">0%</span></div>
           <div class="track"><div class="fill" id="fDose" style="width:0%"></div></div>
-          <div class="note">Dose acumulada. Acima de 100% é o fim.</div>
+          <div class="note">Accumulated dose. Above 100% it is over.</div>
         </div>
       </div>
 
       <div id="banner"></div>
 
       <div class="modes" id="modes">
-        <button data-mode="normal" class="on">Normal<small>gasta 100%<br>ar 100%</small></button>
-        <button data-mode="economia">Economia<small>gasta 78%<br>ar 85%</small></button>
-        <button data-mode="rigoroso">Rigoroso<small>gasta 60%<br>ar 65%</small></button>
+        <button data-mode="normal" class="on">Normal<small>uses 100%<br>air 100%</small></button>
+        <button data-mode="economia">Economy<small>uses 78%<br>air 85%</small></button>
+        <button data-mode="rigoroso">Power-save<small>uses 60%<br>air 65%</small></button>
       </div>
 
       <div class="shelter">
-        <div class="label">Abrigar a tripulação<small id="shelterNote">só funciona com escudo</small></div>
+        <div class="label">Shelter the crew<small id="shelterNote">only works with a shield</small></div>
         <div class="switch" id="shelter" role="switch" aria-checked="false" tabindex="0"><i></i></div>
       </div>
 
-      <button class="btn" id="btnDay">Avançar 1 dia</button>
-      <button class="btn ghost small" id="btnSkip" style="margin-top:8px">Avançar até algo importante</button>
+      <button class="btn" id="btnDay">Next day</button>
+      <button class="btn ghost small" id="btnSkip" style="margin-top:8px">Skip to something important</button>
 
       <div class="card tight" style="margin-top:14px">
         <div class="log" id="log"></div>
@@ -283,22 +283,22 @@
     <!-- ================= RELATÓRIO ================= -->
     <section id="scr-report" class="screen hidden">
       <div class="card result" id="resultCard">
-        <h2 id="resultTitle">Missão concluída</h2>
+        <h2 id="resultTitle">Mission complete</h2>
         <p id="resultSub"></p>
       </div>
 
       <div class="card">
-        <h2>O que aconteceu</h2>
+        <h2>What happened</h2>
         <ul class="why" id="whyList"></ul>
       </div>
 
       <div class="card">
-        <h2>Seus três números</h2>
+        <h2>Your three numbers</h2>
         <div class="charts" id="charts"></div>
       </div>
 
-      <button class="btn" id="btnAgain">Jogar de novo (mesma base)</button>
-      <button class="btn ghost small" id="btnRebuild" style="margin-top:8px">Mudar a base</button>
+      <button class="btn" id="btnAgain">Play again (same base)</button>
+      <button class="btn ghost small" id="btnRebuild" style="margin-top:8px">Change the base</button>
 
       <div class="card tight" style="margin-top:14px">
         <div class="muted" id="reportSources"></div>
@@ -307,13 +307,13 @@
   </main>
 
   <footer class="foot">
-    Dados: NASA DONKI (snapshot de <span id="snapDate">—</span>); NASA OSDR; NASA (fatos da Lua).
-    Valores de radiação do jogo são <b>ilustrativos</b> e não são orientação médica.
-    <br>Sem logos da NASA ou do Space Apps. Feito para o NASA Space Apps Challenge 2026.
+    Data: NASA DONKI (snapshot of <span id="snapDate">—</span>); NASA OSDR; NASA (Moon facts).
+    Radiation values in the game are <b>illustrative</b> and are not medical advice.
+    <br>No NASA or Space Apps logos. Built for the NASA Space Apps Challenge 2026.
   </footer>
 </div>
 
-<script id="game-data" type="application/json">{"constants":{"_label":"Constantes de jogo do LabLunar. Nenhuma delas e um dado medido da NASA: sao valores de design, calibrados para ensinar trade-offs. Cada bloco aponta se tem fonte real ou e ilustrativo.","_calibration":"Alvos: base padrao com jogo atento vence a maioria das partidas, mas nao todas; sem reciclagem, sem estufa ou com bateria pequena, perde quase sempre.","_measured_2026_11_15":{"harness":"LabLunar.runAll(1000) no navegador","storm_calendar":"SEP real: janela 2024-04-25..2024-06-18 (27 eventos, 3 ou 4 tempestades por missao)","padrao_atento_pct":84.1,"padrao_ignorando_tempestade_pct":43.3,"sem_reciclagem_pct":0,"sem_estufa_pct":0,"bateria_pequena_pct":0,"sem_escudo_pct":0},"meta":{"mission_days":56,"cycle_light_days":14,"cycle_dark_days":14,"mass_budget":100,"starting_battery_fraction":0.4,"max_storms_per_mission":4},"mass":{"panel":4,"battery":6,"greenhouse":8,"recycler":6,"shield_none":0,"shield_light":5,"shield_heavy":9,"shield_water":12},"limits":{"panels":[0,8],"batteries":[0,8],"greenhouses":[0,3],"recycler":[0,1]},"energy":{"panel_kwh_per_day":6,"battery_kwh":45,"life_support_kwh":10,"greenhouse_kwh":5,"recycler_kwh":3,"shelter_extra_kwh":2,"modes":{"normal":{"use":1.0,"air":1.0,"label":"Normal"},"economia":{"use":0.78,"air":0.85,"label":"Economia"},"rigoroso":{"use":0.6,"air":0.65,"label":"Rigoroso"}}},"oxygen":{"start":100,"crew_use_per_day":5.4,"greenhouse_prod_per_day":3.0,"recycler_prod_per_day":2.5},"radiation":{"start":0,"limit":100,"surface_per_day":1.2,"storm_per_day":32.0,"shield_factor":{"none":1.0,"light":0.7,"heavy":0.45,"water":0.35},"shelter_factor":0.2},"failures":{"chance_per_day":0.09,"spare_parts":3,"parts_per_repair":1},"sources":{"surface_dose":"ilustrativo (ver data/osdr_snapshot.json)","lunar_cycle":"NASA Moon Facts - https://science.nasa.gov/moon/facts/","game_numbers":"ilustrativos, calibrados pelos testes automáticos"}},"donki":{"status":"ok","sep_status":"ok","flr_status":"ok","captured_at":"2026-11-15T22:51:43","window":{"from":"2024-04-25","to":"2024-06-18"},"requests":[{"endpoint":"SEP","from":"2024-04-25","to":"2024-06-18","url":"https://api.nasa.gov/DONKI/SEP?startDate=2024-04-25&endDate=2024-06-18&api_key=<oculta>","http":200,"count":27,"at":"2026-11-15T22:51:40","error":null},{"endpoint":"FLR","from":"2024-04-25","to":"2024-06-18","url":"https://api.nasa.gov/DONKI/notifications?startDate=2024-04-25&endDate=2024-06-18&type=FLR&api_key=<oculta>","http":200,"count":88,"at":"2026-11-15T22:51:43","error":null}],"history":[{"at":"2026-11-15T22:20","what":"consulta exploratoria com DEMO_KEY em 2025-11-16..2026-01-10","sep":"HTTP 200, 0 eventos","flr_path":"GET /DONKI/FLR -> HTTP 404 (o caminho real e /DONKI/notifications?type=FLR)","flr":"HTTP 200, 14 alertas (depois marcados pending_download: reproducao em 2026-11-15 voltou HTTP 429)"},{"at":"2026-11-15","what":"varredura de janelas de 55 dias com NASA_API_KEY","result":"13 janelas consultadas; a de 2024-04-25..2024-06-18 foi a maior (27 eventos SEP)"}],"sep":[{"event_id":"2024-05-09T13:59:00-SEP-001","date":"2024-05-09","event_time":"2024-05-09T13:59Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30609/-1"},{"event_id":"2024-05-09T14:25:00-SEP-001","date":"2024-05-09","event_time":"2024-05-09T14:25Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30610/-1"},{"event_id":"2024-05-10T12:59:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T12:59Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30675/-1"},{"event_id":"2024-05-10T13:02:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T13:02Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30676/-1"},{"event_id":"2024-05-10T13:35:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T13:35Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30677/-1"},{"event_id":"2024-05-10T14:50:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T14:50Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30684/-1"},{"event_id":"2024-05-11T02:10:00-SEP-001","date":"2024-05-11","event_time":"2024-05-11T02:10Z","instruments":["GOES-P: SEISS >100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30714/-1"},{"event_id":"2024-05-11T04:07:00-SEP-001","date":"2024-05-11","event_time":"2024-05-11T04:07Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30717/-1"},{"event_id":"2024-05-13T12:44:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T12:44Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30811/-1"},{"event_id":"2024-05-13T13:10:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T13:10Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30807/-1"},{"event_id":"2024-05-13T14:00:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T14:00Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30817/-1"},{"event_id":"2024-05-13T16:19:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T16:19Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30820/-1"},{"event_id":"2024-05-13T18:07:00-SEP-002","date":"2024-05-13","event_time":"2024-05-13T18:07Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30825/-1"},{"event_id":"2024-05-13T18:07:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T18:07Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30824/-1"},{"event_id":"2024-06-08T02:25:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T02:25Z","instruments":["GOES-P: SEISS >100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31338/-1"},{"event_id":"2024-06-08T02:55:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T02:55Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31343/-1"},{"event_id":"2024-06-08T03:09:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:09Z","instruments":["MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31359/-1"},{"event_id":"2024-06-08T03:34:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:34Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31348/-1"},{"event_id":"2024-06-08T03:36:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:36Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31349/-1"},{"event_id":"2024-06-08T04:14:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:14Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31351/-1"},{"event_id":"2024-06-08T04:14:00-SEP-002","date":"2024-06-08","event_time":"2024-06-08T04:14Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31360/-1"},{"event_id":"2024-06-08T04:20:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:20Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31357/-1"},{"event_id":"2024-06-08T04:48:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:48Z","instruments":["MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31358/-1"},{"event_id":"2024-06-12T00:21:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T00:21Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31435/-1"},{"event_id":"2024-06-12T00:30:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T00:30Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31437/-1"},{"event_id":"2024-06-12T02:58:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T02:58Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31441/-1"},{"event_id":"2024-06-12T04:03:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T04:03Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31452/-1"}],"flr":[{"message_id":"20240430-AL-002","date":"2024-04-30","time":"2024-04-30T23:51Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30358/1"},{"message_id":"20240501-AL-001","date":"2024-05-01","time":"2024-05-01T00:38Z","class":"M9.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30359/1"},{"message_id":"20240503-AL-001","date":"2024-05-03","time":"2024-05-03T02:29Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30404/1"},{"message_id":"20240503-AL-002","date":"2024-05-03","time":"2024-05-03T02:54Z","class":"X1.6","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30405/1"},{"message_id":"20240504-AL-001","date":"2024-05-04","time":"2024-05-04T06:24Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30425/1"},{"message_id":"20240504-AL-002","date":"2024-05-04","time":"2024-05-04T12:23Z","class":"M9.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30426/1"},{"message_id":"20240504-AL-005","date":"2024-05-04","time":"2024-05-04T23:50Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30451/1"},{"message_id":"20240505-AL-001","date":"2024-05-05","time":"2024-05-05T01:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30453/1"},{"message_id":"20240505-AL-002","date":"2024-05-05","time":"2024-05-05T02:25Z","class":"M9.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30454/1"},{"message_id":"20240505-AL-003","date":"2024-05-05","time":"2024-05-05T02:34Z","class":"M8.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30455/1"},{"message_id":"20240505-AL-004","date":"2024-05-05","time":"2024-05-05T06:04Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30458/1"},{"message_id":"20240505-AL-005","date":"2024-05-05","time":"2024-05-05T10:02Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30460/1"},{"message_id":"20240505-AL-006","date":"2024-05-05","time":"2024-05-05T11:58Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30462/1"},{"message_id":"20240505-AL-007","date":"2024-05-05","time":"2024-05-05T12:28Z","class":"X1.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30463/1"},{"message_id":"20240505-AL-008","date":"2024-05-05","time":"2024-05-05T12:29Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30464/1"},{"message_id":"20240505-AL-009","date":"2024-05-05","time":"2024-05-05T12:30Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30465/1"},{"message_id":"20240506-AL-001","date":"2024-05-06","time":"2024-05-06T06:18Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30485/1"},{"message_id":"20240506-AL-002","date":"2024-05-06","time":"2024-05-06T12:15Z","class":"X4.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30490/1"},{"message_id":"20240507-AL-001","date":"2024-05-07","time":"2024-05-07T06:23Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30499/1"},{"message_id":"20240507-AL-002","date":"2024-05-07","time":"2024-05-07T11:48Z","class":"M5.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30504/1"},{"message_id":"20240507-AL-003","date":"2024-05-07","time":"2024-05-07T16:37Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30533/1"},{"message_id":"20240507-AL-004","date":"2024-05-07","time":"2024-05-07T16:40Z","class":"M8.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30534/1"},{"message_id":"20240508-AL-001","date":"2024-05-08","time":"2024-05-08T01:43Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30549/1"},{"message_id":"20240508-AL-002","date":"2024-05-08","time":"2024-05-08T01:55Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30550/1"},{"message_id":"20240508-AL-003","date":"2024-05-08","time":"2024-05-08T04:55Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30552/1"},{"message_id":"20240508-AL-004","date":"2024-05-08","time":"2024-05-08T06:55Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30554/1"},{"message_id":"20240508-AL-005","date":"2024-05-08","time":"2024-05-08T11:53Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30556/1"},{"message_id":"20240508-AL-006","date":"2024-05-08","time":"2024-05-08T13:10Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30558/1"},{"message_id":"20240508-AL-007","date":"2024-05-08","time":"2024-05-08T13:36Z","class":"M8.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30560/1"},{"message_id":"20240508-AL-008","date":"2024-05-08","time":"2024-05-08T13:45Z","class":"M7.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30563/1"},{"message_id":"20240508-AL-010","date":"2024-05-08","time":"2024-05-08T17:54Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30587/1"},{"message_id":"20240508-AL-011","date":"2024-05-08","time":"2024-05-08T18:06Z","class":"M7.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30588/1"},{"message_id":"20240508-AL-013","date":"2024-05-08","time":"2024-05-08T22:35Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30602/1"},{"message_id":"20240508-AL-014","date":"2024-05-08","time":"2024-05-08T22:38Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30604/1"},{"message_id":"20240509-AL-001","date":"2024-05-09","time":"2024-05-09T09:00Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30606/1"},{"message_id":"20240509-AL-002","date":"2024-05-09","time":"2024-05-09T12:03Z","class":"X2.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30607/1"},{"message_id":"20240509-AL-003","date":"2024-05-09","time":"2024-05-09T12:36Z","class":"M9.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30608/1"},{"message_id":"20240509-AL-007","date":"2024-05-09","time":"2024-05-09T17:42Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30635/1"},{"message_id":"20240509-AL-008","date":"2024-05-09","time":"2024-05-09T17:54Z","class":"X1.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30636/1"},{"message_id":"20240510-AL-001","date":"2024-05-10","time":"2024-05-10T06:51Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30667/1"},{"message_id":"20240510-AL-002","date":"2024-05-10","time":"2024-05-10T11:37Z","class":"X3.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30668/1"},{"message_id":"20240510-AL-006","date":"2024-05-10","time":"2024-05-10T14:15Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30681/1"},{"message_id":"20240510-AL-007","date":"2024-05-10","time":"2024-05-10T14:28Z","class":"M5.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30682/1"},{"message_id":"20240511-AL-004","date":"2024-05-11","time":"2024-05-11T01:27Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30712/1"},{"message_id":"20240511-AL-005","date":"2024-05-11","time":"2024-05-11T01:49Z","class":"X5.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30713/1"},{"message_id":"20240511-AL-010","date":"2024-05-11","time":"2024-05-11T11:37Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30723/1"},{"message_id":"20240511-AL-011","date":"2024-05-11","time":"2024-05-11T12:33Z","class":"X1.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30724/1"},{"message_id":"20240511-AL-014","date":"2024-05-11","time":"2024-05-11T15:13Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30730/1"},{"message_id":"20240511-AL-016","date":"2024-05-11","time":"2024-05-11T15:41Z","class":"M8.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30732/1"},{"message_id":"20240512-AL-002","date":"2024-05-12","time":"2024-05-12T16:25Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30761/1"},{"message_id":"20240512-AL-003","date":"2024-05-12","time":"2024-05-12T16:37Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30762/1"},{"message_id":"20240513-AL-003","date":"2024-05-13","time":"2024-05-13T09:44Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30804/1"},{"message_id":"20240513-AL-004","date":"2024-05-13","time":"2024-05-13T12:34Z","class":"M6.6","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30805/1"},{"message_id":"20240514-AL-001","date":"2024-05-14","time":"2024-05-14T02:10Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30833/1"},{"message_id":"20240514-AL-002","date":"2024-05-14","time":"2024-05-14T02:26Z","class":"X1.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30834/1"},{"message_id":"20240514-AL-003","date":"2024-05-14","time":"2024-05-14T12:54Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30838/1"},{"message_id":"20240514-AL-004","date":"2024-05-14","time":"2024-05-14T13:04Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30840/1"},{"message_id":"20240514-AL-006","date":"2024-05-14","time":"2024-05-14T16:52Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30850/1"},{"message_id":"20240514-AL-007","date":"2024-05-14","time":"2024-05-14T17:00Z","class":"X8.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30851/1"},{"message_id":"20240515-AL-002","date":"2024-05-15","time":"2024-05-15T08:36Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30880/1"},{"message_id":"20240515-AL-003","date":"2024-05-15","time":"2024-05-15T12:29Z","class":"X3.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30882/1"},{"message_id":"20240515-AL-006","date":"2024-05-15","time":"2024-05-15T14:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30901/1"},{"message_id":"20240515-AL-008","date":"2024-05-15","time":"2024-05-15T15:15Z","class":"X2.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30903/1"},{"message_id":"20240517-AL-005","date":"2024-05-17","time":"2024-05-17T21:11Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30992/1"},{"message_id":"20240517-AL-007","date":"2024-05-17","time":"2024-05-17T22:15Z","class":"M7.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30995/1"},{"message_id":"20240527-AL-001","date":"2024-05-27","time":"2024-05-27T07:04Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31159/1"},{"message_id":"20240527-AL-002","date":"2024-05-27","time":"2024-05-27T12:15Z","class":"X2.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31160/1"},{"message_id":"20240529-AL-001","date":"2024-05-29","time":"2024-05-29T14:29Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31186/1"},{"message_id":"20240529-AL-002","date":"2024-05-29","time":"2024-05-29T14:53Z","class":"X1.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31187/1"},{"message_id":"20240529-AL-003","date":"2024-05-29","time":"2024-05-29T18:47Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31194/1"},{"message_id":"20240529-AL-004","date":"2024-05-29","time":"2024-05-29T19:31Z","class":"M5.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31199/1"},{"message_id":"20240531-AL-001","date":"2024-05-31","time":"2024-05-31T22:05Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31249/1"},{"message_id":"20240531-AL-002","date":"2024-05-31","time":"2024-05-31T22:14Z","class":"X1.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31250/1"},{"message_id":"20240601-AL-001","date":"2024-06-01","time":"2024-06-01T08:52Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31252/1"},{"message_id":"20240601-AL-002","date":"2024-06-01","time":"2024-06-01T12:19Z","class":"X1.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31253/1"},{"message_id":"20240601-AL-003","date":"2024-06-01","time":"2024-06-01T18:42Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31255/1"},{"message_id":"20240601-AL-004","date":"2024-06-01","time":"2024-06-01T18:49Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31256/1"},{"message_id":"20240601-AL-005","date":"2024-06-01","time":"2024-06-01T19:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31258/1"},{"message_id":"20240601-AL-006","date":"2024-06-01","time":"2024-06-01T20:21Z","class":"M7.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31259/1"},{"message_id":"20240606-AL-001","date":"2024-06-06","time":"2024-06-06T15:07Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31321/1"},{"message_id":"20240606-AL-002","date":"2024-06-06","time":"2024-06-06T15:16Z","class":"M6.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31322/1"},{"message_id":"20240608-AL-001","date":"2024-06-08","time":"2024-06-08T01:39Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31336/1"},{"message_id":"20240608-AL-002","date":"2024-06-08","time":"2024-06-08T02:02Z","class":"M9.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31337/1"},{"message_id":"20240610-AL-001","date":"2024-06-10","time":"2024-06-10T10:56Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31396/1"},{"message_id":"20240610-AL-002","date":"2024-06-10","time":"2024-06-10T11:36Z","class":"M5.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31398/1"},{"message_id":"20240610-AL-003","date":"2024-06-10","time":"2024-06-10T11:39Z","class":"X1.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31399/1"},{"message_id":"20240610-AL-006","date":"2024-06-10","time":"2024-06-10T18:32Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31418/1"},{"message_id":"20240610-AL-007","date":"2024-06-10","time":"2024-06-10T19:05Z","class":"M9.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31419/1"}],"notes":{"sep":"SEP = Solar Energetic Particle. Fonte primaria (unica) das tempestades do jogo.","flr":"FLR = flare. Serve apenas como aviso do dia anterior; nunca cria tempestade."}},"osdr":{"status":"ok","accessed_at":"2026-11-15","portal":"https://osdr.nasa.gov","api":"https://osdr.nasa.gov/osdr/data/search?term=radiation%20dosimetry&size=5","api_http":200,"hits":107,"example_ids":["GSE104121","GSE107057"],"note":"A API de busca do OSDR respondeu HTTP 200 em 2026-11-15 com 107 resultados para 'radiation dosimetry'. Dados de sequenciamento de astronautas sao de acesso controlado; metadados sao publicos.","values":{"daily_dose_percent_of_limit":{"value":1.2,"label":"illustrative","why":"Nao foi possivel extrair um valor de dose diaria de um dataset publico do OSDR. O numero e ilustrativo, calibrado para o jogo."},"shelter_share_of_dose":{"value":0.2,"label":"illustrative","why":"Fracao da dose de tempestade recebida dentro do abrigo."}},"warning":"Os valores de radiacao do jogo sao ilustrativos e nao sao orientacao medica."},"artemis":{"status":"ok","accessed_at":"2026-11-15","values":{"lunar_cycle_days":{"value":29.5,"source":"https://science.nasa.gov/moon/facts/","label":"sourced","quote":"A Lua orbita a Terra em 27 dias e, vista da Terra, completa um ciclo em cerca de 29 dias."},"daylight_days":{"value":14.75,"source":"https://science.nasa.gov/moon/facts/","derivation":"metade de 29,5 dias; o jogo arredonda para 14","label":"derived"},"night_days":{"value":14.75,"source":"https://science.nasa.gov/moon/facts/","derivation":"metade de 29,5 dias; o jogo arredonda para 14","label":"derived"},"surface_temp_c":{"value":{"day":127,"night":-173},"source":"https://science.nasa.gov/moon/facts/","label":"sourced"},"surface_dose_per_day_percent":{"value":1.2,"source":null,"label":"illustrative"}},"note":"Dia e noite vem da pagina oficial de fatos da Lua; a dose de radiacao e ilustrativa e esta marcada assim no jogo."}}</script>
+<script id="game-data" type="application/json">{"constants":{"_label":"Constantes de jogo do LabLunar. Nenhuma delas e um dado medido da NASA: sao valores de design, calibrados para ensinar trade-offs. Cada bloco aponta se tem fonte real ou e ilustrativo.","_calibration":"Alvos: base padrao com jogo atento vence a maioria das partidas, mas nao todas; sem reciclagem, sem estufa ou com bateria pequena, perde quase sempre.","_measured_2026_11_15":{"harness":"LabLunar.runAll(1000) no navegador","storm_calendar":"SEP real: janela 2024-04-25..2024-06-18 (27 eventos, 3 ou 4 tempestades por missao)","padrao_atento_pct":84.1,"padrao_ignorando_tempestade_pct":43.3,"sem_reciclagem_pct":0,"sem_estufa_pct":0,"bateria_pequena_pct":0,"sem_escudo_pct":0},"meta":{"mission_days":56,"cycle_light_days":14,"cycle_dark_days":14,"mass_budget":100,"starting_battery_fraction":0.4,"max_storms_per_mission":4},"mass":{"panel":4,"battery":6,"greenhouse":8,"recycler":6,"shield_none":0,"shield_light":5,"shield_heavy":9,"shield_water":12},"limits":{"panels":[0,8],"batteries":[0,8],"greenhouses":[0,3],"recycler":[0,1]},"energy":{"panel_kwh_per_day":6,"battery_kwh":45,"life_support_kwh":10,"greenhouse_kwh":5,"recycler_kwh":3,"shelter_extra_kwh":2,"modes":{"normal":{"use":1.0,"air":1.0,"label":"Normal"},"economia":{"use":0.78,"air":0.85,"label":"Economy"},"rigoroso":{"use":0.6,"air":0.65,"label":"Power-save"}}},"oxygen":{"start":100,"crew_use_per_day":5.4,"greenhouse_prod_per_day":3.0,"recycler_prod_per_day":2.5},"radiation":{"start":0,"limit":100,"surface_per_day":1.2,"storm_per_day":32.0,"shield_factor":{"none":1.0,"light":0.7,"heavy":0.45,"water":0.35},"shelter_factor":0.2},"failures":{"chance_per_day":0.09,"spare_parts":3,"parts_per_repair":1},"sources":{"surface_dose":"ilustrativo (ver data/osdr_snapshot.json)","lunar_cycle":"NASA Moon Facts - https://science.nasa.gov/moon/facts/","game_numbers":"ilustrativos, calibrados pelos testes automáticos"}},"donki":{"status":"ok","sep_status":"ok","flr_status":"ok","captured_at":"2026-11-15T22:51:43","window":{"from":"2024-04-25","to":"2024-06-18"},"requests":[{"endpoint":"SEP","from":"2024-04-25","to":"2024-06-18","url":"https://api.nasa.gov/DONKI/SEP?startDate=2024-04-25&endDate=2024-06-18&api_key=<oculta>","http":200,"count":27,"at":"2026-11-15T22:51:40","error":null},{"endpoint":"FLR","from":"2024-04-25","to":"2024-06-18","url":"https://api.nasa.gov/DONKI/notifications?startDate=2024-04-25&endDate=2024-06-18&type=FLR&api_key=<oculta>","http":200,"count":88,"at":"2026-11-15T22:51:43","error":null}],"history":[{"at":"2026-11-15T22:20","what":"consulta exploratoria com DEMO_KEY em 2025-11-16..2026-01-10","sep":"HTTP 200, 0 eventos","flr_path":"GET /DONKI/FLR -> HTTP 404 (o caminho real e /DONKI/notifications?type=FLR)","flr":"HTTP 200, 14 alertas (depois marcados pending_download: reproducao em 2026-11-15 voltou HTTP 429)"},{"at":"2026-11-15","what":"varredura de janelas de 55 dias com NASA_API_KEY","result":"13 janelas consultadas; a de 2024-04-25..2024-06-18 foi a maior (27 eventos SEP)"}],"sep":[{"event_id":"2024-05-09T13:59:00-SEP-001","date":"2024-05-09","event_time":"2024-05-09T13:59Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30609/-1"},{"event_id":"2024-05-09T14:25:00-SEP-001","date":"2024-05-09","event_time":"2024-05-09T14:25Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30610/-1"},{"event_id":"2024-05-10T12:59:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T12:59Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30675/-1"},{"event_id":"2024-05-10T13:02:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T13:02Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30676/-1"},{"event_id":"2024-05-10T13:35:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T13:35Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30677/-1"},{"event_id":"2024-05-10T14:50:00-SEP-001","date":"2024-05-10","event_time":"2024-05-10T14:50Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30684/-1"},{"event_id":"2024-05-11T02:10:00-SEP-001","date":"2024-05-11","event_time":"2024-05-11T02:10Z","instruments":["GOES-P: SEISS >100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30714/-1"},{"event_id":"2024-05-11T04:07:00-SEP-001","date":"2024-05-11","event_time":"2024-05-11T04:07Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30717/-1"},{"event_id":"2024-05-13T12:44:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T12:44Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30811/-1"},{"event_id":"2024-05-13T13:10:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T13:10Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30807/-1"},{"event_id":"2024-05-13T14:00:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T14:00Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30817/-1"},{"event_id":"2024-05-13T16:19:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T16:19Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30820/-1"},{"event_id":"2024-05-13T18:07:00-SEP-002","date":"2024-05-13","event_time":"2024-05-13T18:07Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30825/-1"},{"event_id":"2024-05-13T18:07:00-SEP-001","date":"2024-05-13","event_time":"2024-05-13T18:07Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30824/-1"},{"event_id":"2024-06-08T02:25:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T02:25Z","instruments":["GOES-P: SEISS >100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31338/-1"},{"event_id":"2024-06-08T02:55:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T02:55Z","instruments":["GOES-P: SEISS >10 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31343/-1"},{"event_id":"2024-06-08T03:09:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:09Z","instruments":["MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31359/-1"},{"event_id":"2024-06-08T03:34:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:34Z","instruments":["SOHO: COSTEP 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31348/-1"},{"event_id":"2024-06-08T03:36:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T03:36Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31349/-1"},{"event_id":"2024-06-08T04:14:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:14Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31351/-1"},{"event_id":"2024-06-08T04:14:00-SEP-002","date":"2024-06-08","event_time":"2024-06-08T04:14Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31360/-1"},{"event_id":"2024-06-08T04:20:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:20Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31357/-1"},{"event_id":"2024-06-08T04:48:00-SEP-001","date":"2024-06-08","event_time":"2024-06-08T04:48Z","instruments":["MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31358/-1"},{"event_id":"2024-06-12T00:21:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T00:21Z","instruments":["STEREO A: IMPACT 13-100 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31435/-1"},{"event_id":"2024-06-12T00:30:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T00:30Z","instruments":["MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31437/-1"},{"event_id":"2024-06-12T02:58:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T02:58Z","instruments":["SOHO: COSTEP 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31441/-1"},{"event_id":"2024-06-12T04:03:00-SEP-001","date":"2024-06-12","event_time":"2024-06-12T04:03Z","instruments":["MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"],"link":"https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/31452/-1"}],"flr":[{"message_id":"20240430-AL-002","date":"2024-04-30","time":"2024-04-30T23:51Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30358/1"},{"message_id":"20240501-AL-001","date":"2024-05-01","time":"2024-05-01T00:38Z","class":"M9.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30359/1"},{"message_id":"20240503-AL-001","date":"2024-05-03","time":"2024-05-03T02:29Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30404/1"},{"message_id":"20240503-AL-002","date":"2024-05-03","time":"2024-05-03T02:54Z","class":"X1.6","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30405/1"},{"message_id":"20240504-AL-001","date":"2024-05-04","time":"2024-05-04T06:24Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30425/1"},{"message_id":"20240504-AL-002","date":"2024-05-04","time":"2024-05-04T12:23Z","class":"M9.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30426/1"},{"message_id":"20240504-AL-005","date":"2024-05-04","time":"2024-05-04T23:50Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30451/1"},{"message_id":"20240505-AL-001","date":"2024-05-05","time":"2024-05-05T01:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30453/1"},{"message_id":"20240505-AL-002","date":"2024-05-05","time":"2024-05-05T02:25Z","class":"M9.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30454/1"},{"message_id":"20240505-AL-003","date":"2024-05-05","time":"2024-05-05T02:34Z","class":"M8.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30455/1"},{"message_id":"20240505-AL-004","date":"2024-05-05","time":"2024-05-05T06:04Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30458/1"},{"message_id":"20240505-AL-005","date":"2024-05-05","time":"2024-05-05T10:02Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30460/1"},{"message_id":"20240505-AL-006","date":"2024-05-05","time":"2024-05-05T11:58Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30462/1"},{"message_id":"20240505-AL-007","date":"2024-05-05","time":"2024-05-05T12:28Z","class":"X1.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30463/1"},{"message_id":"20240505-AL-008","date":"2024-05-05","time":"2024-05-05T12:29Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30464/1"},{"message_id":"20240505-AL-009","date":"2024-05-05","time":"2024-05-05T12:30Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30465/1"},{"message_id":"20240506-AL-001","date":"2024-05-06","time":"2024-05-06T06:18Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30485/1"},{"message_id":"20240506-AL-002","date":"2024-05-06","time":"2024-05-06T12:15Z","class":"X4.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30490/1"},{"message_id":"20240507-AL-001","date":"2024-05-07","time":"2024-05-07T06:23Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30499/1"},{"message_id":"20240507-AL-002","date":"2024-05-07","time":"2024-05-07T11:48Z","class":"M5.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30504/1"},{"message_id":"20240507-AL-003","date":"2024-05-07","time":"2024-05-07T16:37Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30533/1"},{"message_id":"20240507-AL-004","date":"2024-05-07","time":"2024-05-07T16:40Z","class":"M8.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30534/1"},{"message_id":"20240508-AL-001","date":"2024-05-08","time":"2024-05-08T01:43Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30549/1"},{"message_id":"20240508-AL-002","date":"2024-05-08","time":"2024-05-08T01:55Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30550/1"},{"message_id":"20240508-AL-003","date":"2024-05-08","time":"2024-05-08T04:55Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30552/1"},{"message_id":"20240508-AL-004","date":"2024-05-08","time":"2024-05-08T06:55Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30554/1"},{"message_id":"20240508-AL-005","date":"2024-05-08","time":"2024-05-08T11:53Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30556/1"},{"message_id":"20240508-AL-006","date":"2024-05-08","time":"2024-05-08T13:10Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30558/1"},{"message_id":"20240508-AL-007","date":"2024-05-08","time":"2024-05-08T13:36Z","class":"M8.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30560/1"},{"message_id":"20240508-AL-008","date":"2024-05-08","time":"2024-05-08T13:45Z","class":"M7.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30563/1"},{"message_id":"20240508-AL-010","date":"2024-05-08","time":"2024-05-08T17:54Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30587/1"},{"message_id":"20240508-AL-011","date":"2024-05-08","time":"2024-05-08T18:06Z","class":"M7.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30588/1"},{"message_id":"20240508-AL-013","date":"2024-05-08","time":"2024-05-08T22:35Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30602/1"},{"message_id":"20240508-AL-014","date":"2024-05-08","time":"2024-05-08T22:38Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30604/1"},{"message_id":"20240509-AL-001","date":"2024-05-09","time":"2024-05-09T09:00Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30606/1"},{"message_id":"20240509-AL-002","date":"2024-05-09","time":"2024-05-09T12:03Z","class":"X2.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30607/1"},{"message_id":"20240509-AL-003","date":"2024-05-09","time":"2024-05-09T12:36Z","class":"M9.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30608/1"},{"message_id":"20240509-AL-007","date":"2024-05-09","time":"2024-05-09T17:42Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30635/1"},{"message_id":"20240509-AL-008","date":"2024-05-09","time":"2024-05-09T17:54Z","class":"X1.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30636/1"},{"message_id":"20240510-AL-001","date":"2024-05-10","time":"2024-05-10T06:51Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30667/1"},{"message_id":"20240510-AL-002","date":"2024-05-10","time":"2024-05-10T11:37Z","class":"X3.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30668/1"},{"message_id":"20240510-AL-006","date":"2024-05-10","time":"2024-05-10T14:15Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30681/1"},{"message_id":"20240510-AL-007","date":"2024-05-10","time":"2024-05-10T14:28Z","class":"M5.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30682/1"},{"message_id":"20240511-AL-004","date":"2024-05-11","time":"2024-05-11T01:27Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30712/1"},{"message_id":"20240511-AL-005","date":"2024-05-11","time":"2024-05-11T01:49Z","class":"X5.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30713/1"},{"message_id":"20240511-AL-010","date":"2024-05-11","time":"2024-05-11T11:37Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30723/1"},{"message_id":"20240511-AL-011","date":"2024-05-11","time":"2024-05-11T12:33Z","class":"X1.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30724/1"},{"message_id":"20240511-AL-014","date":"2024-05-11","time":"2024-05-11T15:13Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30730/1"},{"message_id":"20240511-AL-016","date":"2024-05-11","time":"2024-05-11T15:41Z","class":"M8.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30732/1"},{"message_id":"20240512-AL-002","date":"2024-05-12","time":"2024-05-12T16:25Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30761/1"},{"message_id":"20240512-AL-003","date":"2024-05-12","time":"2024-05-12T16:37Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30762/1"},{"message_id":"20240513-AL-003","date":"2024-05-13","time":"2024-05-13T09:44Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30804/1"},{"message_id":"20240513-AL-004","date":"2024-05-13","time":"2024-05-13T12:34Z","class":"M6.6","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30805/1"},{"message_id":"20240514-AL-001","date":"2024-05-14","time":"2024-05-14T02:10Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30833/1"},{"message_id":"20240514-AL-002","date":"2024-05-14","time":"2024-05-14T02:26Z","class":"X1.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30834/1"},{"message_id":"20240514-AL-003","date":"2024-05-14","time":"2024-05-14T12:54Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30838/1"},{"message_id":"20240514-AL-004","date":"2024-05-14","time":"2024-05-14T13:04Z","class":"X1.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30840/1"},{"message_id":"20240514-AL-006","date":"2024-05-14","time":"2024-05-14T16:52Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30850/1"},{"message_id":"20240514-AL-007","date":"2024-05-14","time":"2024-05-14T17:00Z","class":"X8.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30851/1"},{"message_id":"20240515-AL-002","date":"2024-05-15","time":"2024-05-15T08:36Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30880/1"},{"message_id":"20240515-AL-003","date":"2024-05-15","time":"2024-05-15T12:29Z","class":"X3.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30882/1"},{"message_id":"20240515-AL-006","date":"2024-05-15","time":"2024-05-15T14:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30901/1"},{"message_id":"20240515-AL-008","date":"2024-05-15","time":"2024-05-15T15:15Z","class":"X2.9","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30903/1"},{"message_id":"20240517-AL-005","date":"2024-05-17","time":"2024-05-17T21:11Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30992/1"},{"message_id":"20240517-AL-007","date":"2024-05-17","time":"2024-05-17T22:15Z","class":"M7.2","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/30995/1"},{"message_id":"20240527-AL-001","date":"2024-05-27","time":"2024-05-27T07:04Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31159/1"},{"message_id":"20240527-AL-002","date":"2024-05-27","time":"2024-05-27T12:15Z","class":"X2.8","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31160/1"},{"message_id":"20240529-AL-001","date":"2024-05-29","time":"2024-05-29T14:29Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31186/1"},{"message_id":"20240529-AL-002","date":"2024-05-29","time":"2024-05-29T14:53Z","class":"X1.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31187/1"},{"message_id":"20240529-AL-003","date":"2024-05-29","time":"2024-05-29T18:47Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31194/1"},{"message_id":"20240529-AL-004","date":"2024-05-29","time":"2024-05-29T19:31Z","class":"M5.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31199/1"},{"message_id":"20240531-AL-001","date":"2024-05-31","time":"2024-05-31T22:05Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31249/1"},{"message_id":"20240531-AL-002","date":"2024-05-31","time":"2024-05-31T22:14Z","class":"X1.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31250/1"},{"message_id":"20240601-AL-001","date":"2024-06-01","time":"2024-06-01T08:52Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31252/1"},{"message_id":"20240601-AL-002","date":"2024-06-01","time":"2024-06-01T12:19Z","class":"X1.4","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31253/1"},{"message_id":"20240601-AL-003","date":"2024-06-01","time":"2024-06-01T18:42Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31255/1"},{"message_id":"20240601-AL-004","date":"2024-06-01","time":"2024-06-01T18:49Z","class":"X1.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31256/1"},{"message_id":"20240601-AL-005","date":"2024-06-01","time":"2024-06-01T19:30Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31258/1"},{"message_id":"20240601-AL-006","date":"2024-06-01","time":"2024-06-01T20:21Z","class":"M7.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31259/1"},{"message_id":"20240606-AL-001","date":"2024-06-06","time":"2024-06-06T15:07Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31321/1"},{"message_id":"20240606-AL-002","date":"2024-06-06","time":"2024-06-06T15:16Z","class":"M6.1","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31322/1"},{"message_id":"20240608-AL-001","date":"2024-06-08","time":"2024-06-08T01:39Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31336/1"},{"message_id":"20240608-AL-002","date":"2024-06-08","time":"2024-06-08T02:02Z","class":"M9.7","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31337/1"},{"message_id":"20240610-AL-001","date":"2024-06-10","time":"2024-06-10T10:56Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31396/1"},{"message_id":"20240610-AL-002","date":"2024-06-10","time":"2024-06-10T11:36Z","class":"M5.3","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31398/1"},{"message_id":"20240610-AL-003","date":"2024-06-10","time":"2024-06-10T11:39Z","class":"X1.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31399/1"},{"message_id":"20240610-AL-006","date":"2024-06-10","time":"2024-06-10T18:32Z","class":"M5.0","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31418/1"},{"message_id":"20240610-AL-007","date":"2024-06-10","time":"2024-06-10T19:05Z","class":"M9.5","type":"FLR","link":"https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/31419/1"}],"notes":{"sep":"SEP = Solar Energetic Particle. Fonte primaria (unica) das tempestades do jogo.","flr":"FLR = flare. Serve apenas como aviso do dia anterior; nunca cria tempestade."}},"osdr":{"status":"ok","accessed_at":"2026-11-15","portal":"https://osdr.nasa.gov","api":"https://osdr.nasa.gov/osdr/data/search?term=radiation%20dosimetry&size=5","api_http":200,"hits":107,"example_ids":["GSE104121","GSE107057"],"note":"A API de busca do OSDR respondeu HTTP 200 em 2026-11-15 com 107 resultados para 'radiation dosimetry'. Dados de sequenciamento de astronautas sao de acesso controlado; metadados sao publicos.","values":{"daily_dose_percent_of_limit":{"value":1.2,"label":"illustrative","why":"Nao foi possivel extrair um valor de dose diaria de um dataset publico do OSDR. O numero e ilustrativo, calibrado para o jogo."},"shelter_share_of_dose":{"value":0.2,"label":"illustrative","why":"Fracao da dose de tempestade recebida dentro do abrigo."}},"warning":"Os valores de radiacao do jogo sao ilustrativos e nao sao orientacao medica."},"artemis":{"status":"ok","accessed_at":"2026-11-15","values":{"lunar_cycle_days":{"value":29.5,"source":"https://science.nasa.gov/moon/facts/","label":"sourced","quote":"A Lua orbita a Terra em 27 dias e, vista da Terra, completa um ciclo em cerca de 29 dias."},"daylight_days":{"value":14.75,"source":"https://science.nasa.gov/moon/facts/","derivation":"metade de 29,5 dias; o jogo arredonda para 14","label":"derived"},"night_days":{"value":14.75,"source":"https://science.nasa.gov/moon/facts/","derivation":"metade de 29,5 dias; o jogo arredonda para 14","label":"derived"},"surface_temp_c":{"value":{"day":127,"night":-173},"source":"https://science.nasa.gov/moon/facts/","label":"sourced"},"surface_dose_per_day_percent":{"value":1.2,"source":null,"label":"illustrative"}},"note":"Dia e noite vem da pagina oficial de fatos da Lua; a dose de radiacao e ilustrativa e esta marcada assim no jogo."}}</script>
 
 <script>
 "use strict";
@@ -354,7 +354,7 @@ function stormPool() {
     events: sep.map((e) => ({
       date: e.date,
       strength: 1.0 + Math.min(0.5, ((e.instruments || []).length || 1) * 0.15),
-      label: "SEP (partículas solares)",
+      label: "SEP (solar particle event)",
       id: e.event_id || e.date,
     })),
   };
@@ -440,7 +440,7 @@ function syntheticPlan(seed) {
     day: day + Math.floor(rnd() * 3),
     len: 2,
     strength: 0.8 + rnd() * 0.6,
-    label: "sintético (teste)",
+    label: "synthetic (test)",
     date: null,
     id: "synthetic-" + day,
   }));
@@ -553,11 +553,11 @@ function stepDay(S, action) {
     }
   }
 
-  S.series.push({ d: S.day, energy: cap ? Math.round((S.battery / cap) * 100) : 0, o2: Math.round(S.o2), dose: Math.round(S.dose) });
+  S.series.push({ d: S.day, energy: cap ? Math.round((S.battery / cap) * 100) : 0, o2: Math.round(S.o2), dose: Math.round(S.dose * 10) / 10 });
   S.log.push({
     day: S.day, isDay, dayOfPhase, storm, sheltering, blackout,
     prod: Math.round(prod), use: Math.round(use), o2: Math.round(S.o2),
-    dose: Math.round(S.dose), failure, batteries,
+    dose: Math.round(S.dose * 10) / 10, failure, batteries,
   });
   if (S.log.length > 60) S.log.shift();
 
@@ -599,45 +599,45 @@ function simulate(cfg, seed, policy, opts) {
 }
 
 /* ------------------------------------------------------------ textos */
-const ITEM_NAME = { panel: "um painel solar", battery: "uma bateria", greenhouse: "uma estufa", recycler: "a recicladora" };
+const ITEM_NAME = { panel: "a solar panel", battery: "a battery", greenhouse: "a greenhouse", recycler: "the air recycler" };
 const RES_LABEL = {
-  oxigenio: "o oxigênio acabou",
-  radiacao: "a dose de radiação passou do limite",
-  energia: "a energia acabou por 3 dias seguidos",
-  sobreviveu: "a tripulação sobreviveu aos 56 dias",
+  oxigenio: "the oxygen ran out",
+  radiacao: "the radiation dose went past the limit",
+  energia: "power was gone for 3 days in a row",
+  sobreviveu: "the crew survived all 56 days",
 };
 
 function explain(S) {
   const out = [];
   const st = S.plan.storms;
   if (S.plan.synthetic) {
-    out.push("Esta partida rodou no <b>modo de teste de balanceamento</b>, com calendário de tempestades sintético.");
+    out.push("This run used the <b>balance-test mode</b>, with a synthetic storm calendar.");
   } else if (st.length) {
-    out.push(`A missão usou <b>${st.length} tempestade(s) solar(es)</b> do banco de dados da NASA, a primeira em ${fmtDate(st[0].date)}.`);
+    out.push(`The mission used <b>${st.length} real solar storm(s)</b> from the NASA database, the first on ${fmtDate(st[0].date)}.`);
   } else if (S.plan.pending) {
-    out.push("Os dados de tempestade da NASA estão <b>pendentes</b>, então esta missão não teve tempestade: o jogo não inventa evento.");
+    out.push("NASA storm data is <b>pending</b>, so this mission had no storm: the game does not invent events.");
   } else {
-    out.push("Não havia evento SEP no período baixado da NASA, então esta missão não teve tempestade.");
+    out.push("There was no SEP event in the downloaded NASA period, so this mission had no storm.");
   }
   const firstStorm = st[0];
   if (firstStorm) {
     const l = S.log.find((x) => x.day === firstStorm.day);
-    if (l && l.sheltering) out.push(`No <b>dia ${firstStorm.day}</b> a tripulação se abrigou durante a tempestade: a dose subiu pouco.`);
-    if (l && !l.sheltering && S.cfg.shield !== "none") out.push(`No <b>dia ${firstStorm.day}</b> ninguém se abrigou: a dose subiu mais rápido.`);
-    if (S.cfg.shield === "none") out.push("Sua base não tinha escudo, então não era possível se abrigar: toda radiação entrou direto.");
+    if (l && l.sheltering) out.push(`On <b>day ${firstStorm.day}</b> the crew sheltered during the storm: the dose rose only a little.`);
+    if (l && !l.sheltering && S.cfg.shield !== "none") out.push(`On <b>day ${firstStorm.day}</b> nobody sheltered: the dose rose much faster.`);
+    if (S.cfg.shield === "none") out.push("Your base had no shield, so sheltering was impossible: all the radiation came straight in.");
   }
   const noAir = S.log.filter((x) => x.o2 < 40).length;
-  if (noAir) out.push(`O oxigênio ficou abaixo de 40% em <b>${noAir} dia(s)</b> — sinal de que estufa e recicladora não deram conta.`);
+  if (noAir) out.push(`Oxygen dropped below 40% on <b>${noAir} day(s)</b> — the greenhouse and the recycler could not keep up.`);
   const blackouts = S.log.filter((x) => x.blackout).length;
-  if (blackouts) out.push(`A bateria zerou em <b>${blackouts} dia(s)</b>. Sem energia, estufa e recicladora param juntas.`);
+  if (blackouts) out.push(`The battery hit zero on <b>${blackouts} day(s)</b>. Without power, greenhouse and recycler stop together.`);
   const fixed = S.log.filter((x) => x.failure && x.failure.repaired).length;
   const dead = S.log.filter((x) => x.failure && !x.failure.repaired).length;
-  if (fixed) out.push(`${fixed} falha(s) de equipamento foram consertadas com peças de reserva.`);
-  if (dead) out.push(`${dead} falha(s) ficaram sem conserto e o equipamento parou até o fim.`);
+  if (fixed) out.push(`${fixed} equipment failure(s) were repaired with spare parts.`);
+  if (dead) out.push(`${dead} failure(s) were never repaired and the equipment stayed offline.`);
 
   const cause = S.result === "vitoria"
-    ? "Você terminou os 56 dias com energia, ar e radiação sob controle."
-    : `Fim no <b>dia ${S.day}</b>: ${RES_LABEL[S.reason] || "a missão acabou"}.`;
+    ? "You finished the 56 days with power, air and radiation under control."
+    : `Ended on <b>day ${S.day}</b>: ${RES_LABEL[S.reason] || "the mission ended"}.`;
   out.unshift(cause);
   return out;
 }
@@ -657,10 +657,10 @@ const state = {
 };
 
 const SHIELDS = [
-  { id: "none", name: "Nenhum", note: "sem proteção" },
-  { id: "light", name: "Leve", note: "reduz 30%" },
-  { id: "heavy", name: "Pesado", note: "reduz 55%" },
-  { id: "water", name: "Parede d'água", note: "reduz 65%" },
+  { id: "none", name: "None", note: "no protection" },
+  { id: "light", name: "Light", note: "cuts 30%" },
+  { id: "heavy", name: "Heavy", note: "cuts 55%" },
+  { id: "water", name: "Water wall", note: "cuts 65%" },
 ];
 
 function show(id) {
@@ -675,7 +675,7 @@ function renderShields() {
   $("shields").innerHTML = SHIELDS.map((s) => {
     const mass = C.mass["shield_" + s.id];
     return `<button data-shield="${s.id}" class="${state.cfg.shield === s.id ? "on" : ""}">
-      ${s.name}<small>${s.note} · massa ${mass}</small></button>`;
+      ${s.name}<small>${s.note} · mass ${mass}</small></button>`;
   }).join("");
   $("shields").querySelectorAll("button").forEach((b) => {
     b.onclick = () => { state.cfg.shield = b.dataset.shield; renderDesign(); };
@@ -695,7 +695,7 @@ function renderDesign() {
 
   const used = massOf(cfg);
   const budget = C.meta.mass_budget;
-  $("massLabel").textContent = `Massa usada: ${used} / ${budget}`;
+  $("massLabel").textContent = `Mass used: ${used} / ${budget}`;
   const bar = $("massBar");
   bar.classList.toggle("over", used > budget);
   bar.querySelector("i").style.width = Math.min(100, (used / budget) * 100) + "%";
@@ -705,19 +705,19 @@ function renderDesign() {
   const bal = dailyBalance(cfg);
   const cap = cfg.batteries * C.energy.battery_kwh;
   $("preview").innerHTML = `
-    <div><b>${bal.prod} kWh</b><small>produz por dia de sol</small></div>
-    <div><b>${Math.round(bal.use)} kWh</b><small>gasta por dia</small></div>
-    <div><b>${bal.dayNet >= 0 ? "+" : ""}${Math.round(bal.dayNet)} kWh</b><small>sobra no dia de sol</small></div>
-    <div><b>${Math.round(bal.nightNeed)} kWh</b><small>precisa na noite de 14 dias</small></div>`;
+    <div><b>${bal.prod} kWh</b><small>made per sunny day</small></div>
+    <div><b>${Math.round(bal.use)} kWh</b><small>used per day</small></div>
+    <div><b>${bal.dayNet >= 0 ? "+" : ""}${Math.round(bal.dayNet)} kWh</b><small>left over on a sunny day</small></div>
+    <div><b>${Math.round(bal.nightNeed)} kWh</b><small>needed for the 14-day night</small></div>`;
   const falta = bal.nightNeed - cap;
   $("previewWarn").innerHTML = falta > 0
-    ? `Suas baterias guardam ${cap} kWh. Faltam <b>${Math.round(falta)} kWh</b> para atravessar a noite.`
+    ? `Your batteries hold ${cap} kWh. You are <b>${Math.round(falta)} kWh</b> short of crossing the night.`
     : (bal.dayNet < 0
-      ? "No dia de sol você gasta mais do que produz: a bateria vai cair todo dia."
-      : `Suas baterias (${cap} kWh) cobrem as 14 noites com folga.`);
+      ? "On a sunny day you spend more than you make: the battery will drop every day."
+      : `Your batteries (${cap} kWh) cover the 14 nights with room to spare.`);
 
   $("btnMission").disabled = used > budget;
-  $("btnMission").textContent = used > budget ? "Massa demais — tire algo" : "Iniciar missão";
+  $("btnMission").textContent = used > budget ? "Too much mass — remove something" : "Start mission";
 }
 
 document.querySelectorAll(".stepper").forEach((st) => {
@@ -749,26 +749,26 @@ function renderMission() {
   const pctE = cap ? clamp((S.battery / cap) * 100, 0, 100) : 0;
 
   const displayDay = Math.min(S.day + 1, C.meta.mission_days);
-  $("dayPill").textContent = `Dia ${displayDay} de ${C.meta.mission_days}`;
-  $("spares").textContent = `peças: ${S.parts}`;
+  $("dayPill").textContent = `Day ${displayDay} of ${C.meta.mission_days}`;
+  $("spares").textContent = `spares: ${S.parts}`;
 
   const cycle = C.meta.cycle_light_days + C.meta.cycle_dark_days;
   const inCycle = (displayDay - 1) % cycle;
   const nextIsDay = inCycle < C.meta.cycle_light_days;
   $("sky").className = "sky " + (nextIsDay ? "day" : "night");
   const dPhase = nextIsDay ? inCycle + 1 : inCycle - C.meta.cycle_light_days + 1;
-  $("phaseText").textContent = (nextIsDay ? "Sol" : "Noite") + ` — dia ${clamp(dPhase, 1, 14)} de 14`;
+  $("phaseText").textContent = (nextIsDay ? "Sun" : "Night") + ` — day ${clamp(dPhase, 1, 14)} of 14`;
 
   $("vEnergy").textContent = `${S.battery} kWh`;
   $("fEnergy").style.width = pctE + "%";
   $("mEnergy").classList.toggle("low", pctE < 15);
-  $("nEnergy").textContent = cap ? `de ${cap} kWh guardados nas baterias` : "sem baterias: só o que o painel produz na hora";
+  $("nEnergy").textContent = cap ? `out of ${cap} kWh stored in the batteries` : "no batteries: only what the panels make right now";
 
   $("vOxygen").textContent = Math.round(S.o2) + "%";
   $("fOxygen").style.width = S.o2 + "%";
   $("mOxygen").classList.toggle("low", S.o2 < 35);
 
-  $("vDose").textContent = Math.round(S.dose) + "%";
+  $("vDose").textContent = S.dose.toFixed(1) + "%";
   $("fDose").style.width = clamp(S.dose, 0, 100) + "%";
   $("mDose").classList.toggle("low", S.dose > 70);
 
@@ -777,17 +777,17 @@ function renderMission() {
   const storm = stormOnDay(S.plan, S.day);
   let html = "";
   if (S.plan.pending && !S.plan.storms.length) {
-    html = `<div class="banner warn">Dados de tempestade <b>pendentes</b>: nenhum evento SEP foi baixado, então esta missão não inventa tempestade.</div>`;
+    html = `<div class="banner warn">Storm data is <b>pending</b>: no SEP event was downloaded, so this mission does not invent a storm.</div>`;
   } else if (storm) {
-    html = `<div class="banner storm">☀ Tempestade solar agora — ${storm.label}, evento real de ${fmtDate(storm.date)}. A radiação sobe.</div>`;
+    html = `<div class="banner storm">☀ Solar storm now — ${storm.label}, real event from ${fmtDate(storm.date)}. Radiation is rising.</div>`;
   } else if (warn) {
     const fl = flareBefore(warn);
-    html = `<div class="banner warn">⚠ Tempestade solar amanhã — ${warn.label}, evento real de ${fmtDate(warn.date)}${fl ? ` · aviso FLR ${fl.class || ""}` : ""}.</div>`;
+    html = `<div class="banner warn">⚠ Solar storm tomorrow — ${warn.label}, real event from ${fmtDate(warn.date)}${fl ? ` · FLR alert ${fl.class || ""}` : ""}.</div>`;
   } else if (S.plan.storms.length) {
     const nxt = S.plan.storms.find((s) => s.day > S.day);
-    if (nxt) html = `<div class="banner info">Próxima tempestade prevista: dia ${nxt.day} (${fmtDate(nxt.date)}).</div>`;
+    if (nxt) html = `<div class="banner info">Next storm expected on day ${nxt.day} (${fmtDate(nxt.date)}).</div>`;
   } else {
-    html = `<div class="banner info">Sem tempestades no período de dados desta missão.</div>`;
+    html = `<div class="banner info">No storms in the data window of this mission.</div>`;
   }
   $("banner").innerHTML = html;
 
@@ -803,23 +803,23 @@ function renderMission() {
   if (noShield) {
     state.shelter = false;
     sw.setAttribute("aria-disabled", "true");
-    $("shelterNote").textContent = "sua base não tem escudo";
+    $("shelterNote").textContent = "your base has no shield";
   } else {
     sw.removeAttribute("aria-disabled");
-    $("shelterNote").textContent = "gasta 2 kWh a mais por dia";
+    $("shelterNote").textContent = "uses 2 kWh more per day";
   }
 
   // log
   $("log").innerHTML = S.log.slice(-6).reverse().map((l) => {
     const bits = [];
-    bits.push(l.isDay ? "sol" : "noite");
-    if (l.storm) bits.push("tempestade");
-    if (l.blackout) bits.push("bateria zerada");
-    if (l.failure) bits.push((l.failure.repaired ? "conserto: " : "quebrou: ") + ITEM_NAME[l.failure.item]);
-    return `<div><b>Dia ${l.day}</b> · ${bits.join(" · ")} — produz ${l.prod}, gasta ${l.use}, ar ${l.o2}%, dose ${l.dose}%</div>`;
-  }).join("") || `<div>Aperte “Avançar 1 dia” para começar.</div>`;
+    bits.push(l.isDay ? "sun" : "night");
+    if (l.storm) bits.push("storm");
+    if (l.blackout) bits.push("battery empty");
+    if (l.failure) bits.push((l.failure.repaired ? "repaired: " : "broke: ") + ITEM_NAME[l.failure.item]);
+    return `<div><b>Day ${l.day}</b> · ${bits.join(" · ")} — made ${l.prod}, used ${l.use}, air ${l.o2}%, dose ${l.dose}%</div>`;
+  }).join("") || `<div>Press “Next day” to begin.</div>`;
 
-  $("btnDay").textContent = S.over ? "Ver relatório" : "Avançar 1 dia";
+  $("btnDay").textContent = S.over ? "See the report" : "Next day";
 }
 
 function advance() {
@@ -846,7 +846,7 @@ function skipToEvent() {
   renderMission();
   if (S.day !== before && S.day - before > 1) {
     $("log").insertAdjacentHTML("afterbegin",
-      `<div><b>${S.day - before} dias</b> avançaram no modo ${C.energy.modes[state.mode].label}.</div>`);
+      `<div><b>${S.day - before} days</b> passed in ${C.energy.modes[state.mode].label} mode.</div>`);
   }
   if (S.over) setTimeout(openReport, 450);
 }
@@ -857,25 +857,25 @@ function openReport() {
   if (!S) return;
   const win = S.result === "vitoria";
   $("resultCard").className = "card result " + (win ? "win" : "lose");
-  $("resultTitle").textContent = win ? "Você conseguiu!" : "A missão falhou";
+  $("resultTitle").textContent = win ? "You made it!" : "The mission failed";
   $("resultSub").textContent = win
-    ? `A tripulação viveu os ${C.meta.mission_days} dias.`
-    : `A base parou no dia ${S.day}.`;
+    ? `The crew lived through all ${C.meta.mission_days} days.`
+    : `The base stopped on day ${S.day}.`;
 
   $("whyList").innerHTML = explain(S).map((t) => `<li>${t}</li>`).join("");
 
   $("charts").innerHTML = [
-    chart("ENERGIA NA BATERIA (%)", S.series.map((p) => ({ x: p.d, y: p.energy })), "#ffc44d"),
-    chart("OXIGÊNIO (%)", S.series.map((p) => ({ x: p.d, y: p.o2 })), "#7cb8ff"),
-    chart("DOSE DE RADIAÇÃO (%)", S.series.map((p) => ({ x: p.d, y: p.dose })), "#6fe3a8"),
+    chart("BATTERY ENERGY (%)", S.series.map((p) => ({ x: p.d, y: p.energy })), "#ffc44d"),
+    chart("OXYGEN (%)", S.series.map((p) => ({ x: p.d, y: p.o2 })), "#7cb8ff"),
+    chart("RADIATION DOSE (%)", S.series.map((p) => ({ x: p.d, y: p.dose })), "#6fe3a8"),
   ].join("");
 
   const donkiDate = (DONKI.captured_at || "").slice(0, 10);
   const sepOk = DONKI.sep_status === "ok";
   $("reportSources").innerHTML =
-    `Fonte das tempestades: NASA DONKI (snapshot de ${fmtDate(donkiDate)}; SEP ${sepOk ? `${(DONKI.sep || []).length} evento(s)` : "pendente_download"}). ` +
-    `Radiação: ideia de dose acumulada baseada no NASA OSDR (valores ilustrativos, não é orientação médica). ` +
-    `Dia e noite de 14 dias: NASA — fatos da Lua.`;
+    `Storm source: NASA DONKI (snapshot of ${fmtDate(donkiDate)}; SEP ${sepOk ? `${(DONKI.sep || []).length} event(s)` : "pending_download"}). ` +
+    `Radiation: accumulated-dose idea based on NASA OSDR (illustrative values, not medical advice). ` +
+    `14-day sun and night: NASA Moon facts.`;
 
   show("scr-report");
   window.__lastReport = { win, days: S.day, reason: S.reason, cfg: S.cfg };
@@ -890,7 +890,7 @@ function chart(label, pts, color) {
     const y = h - pad - (clamp(p.y, 0, max) / max) * (h - pad * 2);
     return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`;
   }).join(" ");
-  const last = pts.length ? Math.round(pts[pts.length - 1].y) : 0;
+  const last = pts.length ? Math.round(pts[pts.length - 1].y * 10) / 10 : 0;
   return `<div class="chart"><div class="row"><b>${label}</b><span class="muted">final ${last}%</span></div>
     <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none">
       <path d="${d}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
@@ -917,11 +917,11 @@ $("shelter").onclick = () => {
 /* badge de dados */
 (function badge() {
   const sep = (DONKI.sep || []).length, flr = (DONKI.flr || []).length;
-  const when = DONKI.captured_at ? fmtDate(DONKI.captured_at.slice(0, 10)) : "sem data";
+  const when = DONKI.captured_at ? fmtDate(DONKI.captured_at.slice(0, 10)) : "no date";
   const ok = DONKI.sep_status === "ok";
   $("dataBadge").textContent = ok
     ? `NASA DONKI · ${sep} SEP · ${when}`
-    : `NASA DONKI · SEP pendente · ${when}`;
+    : `NASA DONKI · SEP pending · ${when}`;
   $("snapDate").textContent = when;
 })();
 
@@ -956,7 +956,7 @@ function runAll(n = 1000) {
   const opts = pool.pending ? { synthetic: true } : undefined;
   return {
     n,
-    storms_kind: pool.pending ? "synthetic (SEP pendente; so teste)" : pool.kind,
+    storms_kind: pool.pending ? "synthetic (SEP pending; test only)" : pool.kind,
     events: pool.events.length,
     padrao: runBatch(CONFIGS.padrao, n, carefulPolicy, opts),
     sem_reciclagem: runBatch(CONFIGS.sem_reciclagem, n, carefulPolicy, opts),

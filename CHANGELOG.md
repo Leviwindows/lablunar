@@ -15,6 +15,26 @@ Consequência prática: este `index.html` foi escrito do zero a partir do brief,
 
 ---
 
+## [0.3.0] — 2026-11-15
+
+Idioma da interface e ajustes de leitura.
+
+### Alterado
+
+- **Interface traduzida para o inglês**: telas, botões, banners, registro do dia, relatório, gráficos e
+  rodapé. Nomes internos (`economia`, `rigoroso`, `oxigenio`, `radiacao`, `energia`) foram mantidos para
+  não quebrar o motor nem os testes; só o texto visível mudou. `<html lang>` e `<title>` também.
+- **Rótulos dos modos** em `data/game_constants.json` passaram a `Economy` e `Power-save`.
+- **Radiação com uma casa decimal** na barra, no registro e nos gráficos: antes a dose 99,6% aparecia
+  como “100%” com a missão ainda viva, o que parecia contraditório.
+
+### Motivo
+
+O jogo foi submetido ao NASA Space Apps Challenge, cujo júri é internacional; o público-alvo original
+(7–12 anos, Brasil) continua atendido, mas os textos agora estão em inglês.
+
+---
+
 ## [0.2.0] — 2026-11-15
 
 Dados solares reais e novo balanceamento.
